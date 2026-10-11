@@ -1,0 +1,161 @@
+{
+  "date": "2026-10-07",
+  "scope": "E:\\科研_机器人\\HM3D-OVON",
+  "basis": "Primary method contribution; one primary category plus secondary tags.",
+  "moves": [
+    {
+      "from": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\00_Benchmark\\2023_CVPR_HM3D_Semantics_ObjectNav.pdf",
+      "to": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\00_数据集与任务基准\\2023_CVPR_HM3D_Semantics_ObjectNav.pdf",
+      "kind": "primary_pdf"
+    },
+    {
+      "from": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\00_Benchmark\\2024_IROS_HM3D_OVON.pdf",
+      "to": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\00_数据集与任务基准\\2024_IROS_HM3D_OVON.pdf",
+      "kind": "primary_pdf"
+    },
+    {
+      "from": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\00_Benchmark\\2024_CVPR_GOAT_Bench.pdf",
+      "to": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\00_数据集与任务基准\\2024_CVPR_GOAT_Bench.pdf",
+      "kind": "primary_pdf"
+    },
+    {
+      "from": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\00_Benchmark\\2024_SG3D_Sequential_Grounding_and_Navigation.pdf",
+      "to": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\00_数据集与任务基准\\2024_SG3D_Sequential_Grounding_and_Navigation.pdf",
+      "kind": "primary_pdf"
+    },
+    {
+      "from": "E:\\科研_机器人\\HM3D-OVON\\VLFM_Vision-Language_Frontier_Maps_for_Zero-Shot_Semantic_Navigation.pdf",
+      "to": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\02_语义地图与前沿探索\\VLFM_Vision-Language_Frontier_Maps_for_Zero-Shot_Semantic_Navigation.pdf",
+      "kind": "primary_pdf"
+    },
+    {
+      "from": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\2025\\CVPR\\2025_CVPR_TANGO.pdf",
+      "to": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\03_大模型规划与工具调用\\2025_CVPR_TANGO.pdf",
+      "kind": "primary_pdf"
+    },
+    {
+      "from": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\2026\\RSS\\2026_RSS_OpenFrontier.pdf",
+      "to": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\02_语义地图与前沿探索\\2026_RSS_OpenFrontier.pdf",
+      "kind": "primary_pdf"
+    },
+    {
+      "from": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\2025\\ICCV\\2025_ICCV_MTU3D_Move_to_Understand_a_3D_Scene.pdf",
+      "to": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\04_三维空间表征与目标推理\\2025_ICCV_MTU3D_Move_to_Understand_a_3D_Scene.pdf",
+      "kind": "primary_pdf"
+    },
+    {
+      "from": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\2026\\CVPR\\2026_CVPR_MSGNav.pdf",
+      "to": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\04_三维空间表征与目标推理\\2026_CVPR_MSGNav.pdf",
+      "kind": "primary_pdf"
+    },
+    {
+      "from": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\2026\\CVPR\\2026_CVPR_OVSegDT.pdf",
+      "to": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\01_模仿学习与强化学习导航\\2026_CVPR_OVSegDT.pdf",
+      "kind": "primary_pdf"
+    },
+    {
+      "from": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\2026\\ICLR\\2026_ICLR_CompassNav.pdf",
+      "to": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\05_视觉语言动作决策与视频记忆\\2026_ICLR_CompassNav.pdf",
+      "kind": "primary_pdf"
+    },
+    {
+      "from": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\2025\\RSS\\2025_RSS_Uni-NaVid.pdf",
+      "to": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\05_视觉语言动作决策与视频记忆\\2025_RSS_Uni-NaVid.pdf",
+      "kind": "primary_pdf"
+    },
+    {
+      "from": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\2026\\CVPR\\2026_CVPR_AstraNav-Memory.pdf",
+      "to": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\05_视觉语言动作决策与视频记忆\\2026_CVPR_AstraNav-Memory.pdf",
+      "kind": "primary_pdf"
+    },
+    {
+      "from": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\2026\\ICLR\\ICLR-2026-janusvln-decoupling-semantics-and-spatiality-with-dual-implicit-memory-for-vision-language-navigation-Paper-Conference.pdf",
+      "to": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\05_视觉语言动作决策与视频记忆\\ICLR-2026-janusvln-decoupling-semantics-and-spatiality-with-dual-implicit-memory-for-vision-language-navigation-Paper-Conference.pdf",
+      "kind": "primary_pdf"
+    },
+    {
+      "from": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\2026\\ICLR\\2026_ICLR_OmniNav.pdf",
+      "to": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\05_视觉语言动作决策与视频记忆\\2026_ICLR_OmniNav.pdf",
+      "kind": "primary_pdf"
+    },
+    {
+      "from": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\2026\\CVPR\\2026_CVPR_D3D-VLP.pdf",
+      "to": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\04_三维空间表征与目标推理\\2026_CVPR_D3D-VLP.pdf",
+      "kind": "primary_pdf"
+    },
+    {
+      "from": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\2607.14586v1.pdf",
+      "to": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\04_三维空间表征与目标推理\\2607.14586v1.pdf",
+      "kind": "primary_pdf"
+    },
+    {
+      "from": "E:\\科研_机器人\\HM3D-OVON\\2409.14296v1.pdf",
+      "to": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\00_数据集与任务基准\\备用版本\\2409.14296v1.pdf",
+      "kind": "alternate_pdf"
+    },
+    {
+      "from": "E:\\科研_机器人\\HM3D-OVON\\Huang_MSGNav_Unleashing_the_Power_of_Multi-modal_3D_Scene_Graph_for_CVPR_2026_paper.pdf",
+      "to": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\04_三维空间表征与目标推理\\备用版本\\Huang_MSGNav_Unleashing_the_Power_of_Multi-modal_3D_Scene_Graph_for_CVPR_2026_paper.pdf",
+      "kind": "alternate_pdf"
+    },
+    {
+      "from": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\00_Benchmark\\2024_IROS_HM3D_OVON(1).docx",
+      "to": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\00_数据集与任务基准\\2024_IROS_HM3D_OVON(1).docx",
+      "kind": "word_note"
+    },
+    {
+      "from": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\00_Benchmark\\2024_IROS_HM3D_OVON.docx",
+      "to": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\00_数据集与任务基准\\2024_IROS_HM3D_OVON.docx",
+      "kind": "word_note"
+    },
+    {
+      "from": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\2025\\CVPR\\2025_CVPR_TANGO(1).docx",
+      "to": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\03_大模型规划与工具调用\\2025_CVPR_TANGO(1).docx",
+      "kind": "word_note"
+    },
+    {
+      "from": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\2025\\CVPR\\2025_CVPR_TANGO.docx",
+      "to": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\03_大模型规划与工具调用\\2025_CVPR_TANGO.docx",
+      "kind": "word_note"
+    },
+    {
+      "from": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\2026\\CVPR\\2026_CVPR_AstraNav-Memory.docx",
+      "to": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\05_视觉语言动作决策与视频记忆\\2026_CVPR_AstraNav-Memory.docx",
+      "kind": "word_note"
+    },
+    {
+      "from": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\paper_manifest.md",
+      "to": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\索引备份\\重分类前\\paper_manifest.md",
+      "kind": "historical_index"
+    },
+    {
+      "from": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\paper_manifest.csv",
+      "to": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\索引备份\\重分类前\\paper_manifest.csv",
+      "kind": "historical_index"
+    },
+    {
+      "from": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\paper_manifest.xlsx",
+      "to": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\索引备份\\重分类前\\paper_manifest.xlsx",
+      "kind": "historical_index"
+    }
+  ],
+  "copied_due_to_lock": [],
+  "updated_links": [
+    "paper_analysis/all_papers_8h/inventory.json",
+    "output/reading_8h/source_inventory.json",
+    "tmp/tango_technical_revision/content.json",
+    "HM3D_OVON_PPT_Codex_Guide.md",
+    "scripts/download_papers.py",
+    "scripts/download_papers_curl.conf",
+    "scripts/retry_failed_curl.conf",
+    "paper_analysis/all_papers_8h/render_evidence.py",
+    "output/reading_8h/全库技术总结与8小时学习手册.md",
+    "output/reading_8h/8小时论文学习台.html",
+    "tmp/tango_technical_revision/build_docx.py"
+  ],
+  "archived_indices": [
+    "HM3D_OVON_Papers\\索引备份\\重分类前\\paper_manifest.md",
+    "HM3D_OVON_Papers\\索引备份\\重分类前\\paper_manifest.csv",
+    "HM3D_OVON_Papers\\索引备份\\重分类前\\paper_manifest.xlsx"
+  ]
+}

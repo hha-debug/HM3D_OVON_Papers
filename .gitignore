@@ -1,0 +1,19 @@
+# Temporary inspection checkouts and generated caches
+**/tmp/
+**/__pycache__/
+**/node_modules/
+**/.venv/
+**/venv/
+*.py[cod]
+
+# Office/editor temporary files
+~$*
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Local authentication/configuration secrets
+.env
+.env.*
+*.pem
+*.key

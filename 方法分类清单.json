@@ -1,0 +1,291 @@
+{
+  "as_of": "2026-10-07",
+  "scope": "17 distinct local studies; 19 primary/alternate PDF copies. Generated reports and reading notes are not separate studies.",
+  "classification_rule": "One primary method category per paper, with secondary tags for overlaps. Dates and venues remain bibliographic metadata only.",
+  "categories": [
+    {
+      "folder": "00_数据集与任务基准",
+      "name": "数据集与任务基准",
+      "definition": "定义场景、目标形式、任务依赖与评测协议；包含的基线方法用交叉标签说明。"
+    },
+    {
+      "folder": "01_模仿学习与强化学习导航",
+      "name": "模仿学习与强化学习导航",
+      "definition": "以导航策略网络为中心，从观察与历史预测动作，用模仿学习或强化学习训练。"
+    },
+    {
+      "folder": "02_语义地图与前沿探索",
+      "name": "语义地图与前沿探索",
+      "definition": "维护地图或探索候选，用视觉语言语义评价候选，再交给低层导航模块执行。"
+    },
+    {
+      "folder": "03_大模型规划与工具调用",
+      "name": "大模型规划与工具调用",
+      "definition": "大模型负责组合程序或高层步骤，检测、匹配、探索、移动和问答由专门模块完成。"
+    },
+    {
+      "folder": "04_三维空间表征与目标推理",
+      "name": "三维空间表征与目标推理",
+      "definition": "把观察组织成三维物体、场景图、查询向量或特征场，再进行目标定位与探索决策。"
+    },
+    {
+      "folder": "05_视觉语言动作决策与视频记忆",
+      "name": "视觉语言动作决策与视频记忆",
+      "definition": "以多模态大模型或其适配策略为核心，由图像、视频或压缩历史预测动作、候选索引或移动坐标。"
+    }
+  ],
+  "papers": [
+    {
+      "id": "hm3dsem",
+      "paper": "HM3D Semantics",
+      "primary_category": "数据集与任务基准",
+      "folder": "00_数据集与任务基准",
+      "secondary_tags": [],
+      "reason": "核心贡献是室内三维场景的纹理级实例语义标注，不是一个导航控制器。",
+      "pdf": "HM3D_OVON_Papers/00_数据集与任务基准/2023_CVPR_HM3D_Semantics_ObjectNav.pdf",
+      "previous_pdf": "HM3D_OVON_Papers/00_Benchmark/2023_CVPR_HM3D_Semantics_ObjectNav.pdf",
+      "source_anchor": "§3，PDF 第 2–5 页；Table 1；ObjectNav 验证见 §4。"
+    },
+    {
+      "id": "ovon",
+      "paper": "HM3D-OVON",
+      "primary_category": "数据集与任务基准",
+      "folder": "00_数据集与任务基准",
+      "secondary_tags": [
+        "模仿学习与强化学习导航",
+        "开放词汇目标识别"
+      ],
+      "reason": "论文首先定义 OVON 数据与评测；DAgRL 等训练式基线作为交叉方法标签。",
+      "pdf": "HM3D_OVON_Papers/00_数据集与任务基准/2024_IROS_HM3D_OVON.pdf",
+      "previous_pdf": "HM3D_OVON_Papers/00_Benchmark/2024_IROS_HM3D_OVON.pdf",
+      "source_anchor": "§III、Table II，PDF 第 3 页；§IV，第 4–5 页；Tables III–V，第 6 页。"
+    },
+    {
+      "id": "goat",
+      "paper": "GOAT-Bench",
+      "primary_category": "数据集与任务基准",
+      "folder": "00_数据集与任务基准",
+      "secondary_tags": [
+        "多模态目标",
+        "跨子任务记忆"
+      ],
+      "reason": "定义类别、图像、语言目标与连续多目标评测，比较不同记忆和导航基线。",
+      "pdf": "HM3D_OVON_Papers/00_数据集与任务基准/2024_CVPR_GOAT_Bench.pdf",
+      "previous_pdf": "HM3D_OVON_Papers/00_Benchmark/2024_CVPR_GOAT_Bench.pdf",
+      "source_anchor": "§3，PDF 第 3 页；§4–5，第 4–6 页；§6 的记忆和 baseline 比较。"
+    },
+    {
+      "id": "sg3d",
+      "paper": "SG3D / SG-LLM",
+      "primary_category": "数据集与任务基准",
+      "folder": "00_数据集与任务基准",
+      "secondary_tags": [
+        "三维空间表征与目标推理",
+        "顺序指代与 grounding"
+      ],
+      "reason": "主要提供顺序 grounding 与导航任务；SG-LLM 基线利用物体 tokens 和历史目标。",
+      "pdf": "HM3D_OVON_Papers/00_数据集与任务基准/2024_SG3D_Sequential_Grounding_and_Navigation.pdf",
+      "previous_pdf": "HM3D_OVON_Papers/00_Benchmark/2024_SG3D_Sequential_Grounding_and_Navigation.pdf",
+      "source_anchor": "§3–4，PDF 第 3–6 页；Fig. 5；原文 grounding 实验使用 ground-truth object masks。"
+    },
+    {
+      "id": "vlfm",
+      "paper": "VLFM",
+      "primary_category": "语义地图与前沿探索",
+      "folder": "02_语义地图与前沿探索",
+      "secondary_tags": [
+        "模块化系统",
+        "语义价值地图"
+      ],
+      "reason": "VLM 给观察赋语义价值，价值地图指导 frontier 选择，PointNav 执行。",
+      "pdf": "HM3D_OVON_Papers/02_语义地图与前沿探索/VLFM_Vision-Language_Frontier_Maps_for_Zero-Shot_Semantic_Navigation.pdf",
+      "previous_pdf": "VLFM_Vision-Language_Frontier_Maps_for_Zero-Shot_Semantic_Navigation.pdf",
+      "source_anchor": "§IV-A–D，PDF 第 2–5 页；Figs. 2–4；原始 Table I 评测 Gibson、HM3D、MP3D。"
+    },
+    {
+      "id": "tango",
+      "paper": "TANGO",
+      "primary_category": "大模型规划与工具调用",
+      "folder": "03_大模型规划与工具调用",
+      "secondary_tags": [
+        "语义地图与前沿探索",
+        "可重查询特征记忆"
+      ],
+      "reason": "LLM 生成调用 primitives 的程序，Interpreter 执行；探索和特征地图是被调度的模块。",
+      "pdf": "HM3D_OVON_Papers/03_大模型规划与工具调用/2025_CVPR_TANGO.pdf",
+      "previous_pdf": "HM3D_OVON_Papers/2025/CVPR/2025_CVPR_TANGO.pdf",
+      "source_anchor": "§3，PDF 第 3–5 页；Figs. 2–3；Table 1，第 6 页；传感器设置见 §4.1。"
+    },
+    {
+      "id": "openfrontier",
+      "paper": "OpenFrontier",
+      "primary_category": "语义地图与前沿探索",
+      "folder": "02_语义地图与前沿探索",
+      "secondary_tags": [
+        "视觉 frontier",
+        "目标确认与视角选择"
+      ],
+      "reason": "围绕稀疏视觉 frontier 的提出、语义评价、信息增益和全局管理展开。",
+      "pdf": "HM3D_OVON_Papers/02_语义地图与前沿探索/2026_RSS_OpenFrontier.pdf",
+      "previous_pdf": "HM3D_OVON_Papers/2026/RSS/2026_RSS_OpenFrontier.pdf",
+      "source_anchor": "§III，PDF 第 3–5 页；Algorithm 1；Table I，第 5 页；Table II，第 6 页。"
+    },
+    {
+      "id": "mtu3d",
+      "paper": "MTU3D",
+      "primary_category": "三维空间表征与目标推理",
+      "folder": "04_三维空间表征与目标推理",
+      "secondary_tags": [
+        "学习式 grounding 与探索",
+        "物体与 frontier queries"
+      ],
+      "reason": "用在线三维 query 记忆，把物体定位和探索候选选择统一为学习式评分。",
+      "pdf": "HM3D_OVON_Papers/04_三维空间表征与目标推理/2025_ICCV_MTU3D_Move_to_Understand_a_3D_Scene.pdf",
+      "previous_pdf": "HM3D_OVON_Papers/2025/ICCV/2025_ICCV_MTU3D_Move_to_Understand_a_3D_Scene.pdf",
+      "source_anchor": "§3.1–3.4，PDF 第 4–5 页；Table 3，第 6 页。作者 arXiv 全文 Appendix B 明示抽样规模。"
+    },
+    {
+      "id": "msgnav",
+      "paper": "MSGNav",
+      "primary_category": "三维空间表征与目标推理",
+      "folder": "04_三维空间表征与目标推理",
+      "secondary_tags": [
+        "大模型规划与工具调用",
+        "闭环视觉证据",
+        "最后接近与视角选择"
+      ],
+      "reason": "核心组织方式是多模态三维场景图；VLM 在图像证据和空间记忆上推理，兼有大模型规划。",
+      "pdf": "HM3D_OVON_Papers/04_三维空间表征与目标推理/2026_CVPR_MSGNav.pdf",
+      "previous_pdf": "HM3D_OVON_Papers/2026/CVPR/2026_CVPR_MSGNav.pdf",
+      "source_anchor": "§3.2–3.3，PDF 第 3–6 页；Fig. 4 与 §3.3.4 第 6 页；Tables 1–2，第 7 页。"
+    },
+    {
+      "id": "ovsegdt",
+      "paper": "OVSegDT",
+      "primary_category": "模仿学习与强化学习导航",
+      "folder": "01_模仿学习与强化学习导航",
+      "secondary_tags": [
+        "目标分割",
+        "Transformer 历史策略"
+      ],
+      "reason": "主要改进带目标 mask 的导航策略及自适应 BC/PPO 训练，直接预测离散动作。",
+      "pdf": "HM3D_OVON_Papers/01_模仿学习与强化学习导航/2026_CVPR_OVSegDT.pdf",
+      "previous_pdf": "HM3D_OVON_Papers/2026/CVPR/2026_CVPR_OVSegDT.pdf",
+      "source_anchor": "§3，PDF 第 3–6 页；EALM 公式与训练配置；Table 1，第 7 页。"
+    },
+    {
+      "id": "compassnav",
+      "paper": "CompassNav",
+      "primary_category": "视觉语言动作决策与视频记忆",
+      "folder": "05_视觉语言动作决策与视频记忆",
+      "secondary_tags": [
+        "模仿学习与强化学习导航",
+        "可行动作候选",
+        "单帧视觉决策"
+      ],
+      "reason": "VLM 选择画面上的可行极坐标动作候选；SFT/GRPO 是训练方式。主要配方不使用长视频记忆。",
+      "pdf": "HM3D_OVON_Papers/05_视觉语言动作决策与视频记忆/2026_ICLR_CompassNav.pdf",
+      "previous_pdf": "HM3D_OVON_Papers/2026/ICLR/2026_ICLR_CompassNav.pdf",
+      "source_anchor": "§3.1 与 §4.2，PDF 第 4–7 页，Eqs. 3–5；Appendix A.1 Table 6，第 14 页；history ablation Table 13，第 22 页。"
+    },
+    {
+      "id": "uninavid",
+      "paper": "Uni-NaVid",
+      "primary_category": "视觉语言动作决策与视频记忆",
+      "folder": "05_视觉语言动作决策与视频记忆",
+      "secondary_tags": [
+        "统一多任务 VLA",
+        "分级视频压缩"
+      ],
+      "reason": "以 RGB 视频和任务文本统一动作预测及问答，记忆由多档视频 tokens 表示。",
+      "pdf": "HM3D_OVON_Papers/05_视觉语言动作决策与视频记忆/2025_RSS_Uni-NaVid.pdf",
+      "previous_pdf": "HM3D_OVON_Papers/2025/RSS/2025_RSS_Uni-NaVid.pdf",
+      "source_anchor": "作者 arXiv v2 §IV–VI、Table V；原库存 RSS PDF 17 页无可提取正文，本手册改读作者 v2 的 27 页副本。"
+    },
+    {
+      "id": "astranav",
+      "paper": "AstraNav-Memory",
+      "primary_category": "视觉语言动作决策与视频记忆",
+      "folder": "05_视觉语言动作决策与视频记忆",
+      "secondary_tags": [
+        "长历史视觉压缩",
+        "带位姿图像",
+        "坐标预测"
+      ],
+      "reason": "将长历史图像压缩成少量视觉 tokens，由 VLM 结合位姿预测导航坐标。",
+      "pdf": "HM3D_OVON_Papers/05_视觉语言动作决策与视频记忆/2026_CVPR_AstraNav-Memory.pdf",
+      "previous_pdf": "HM3D_OVON_Papers/2026/CVPR/2026_CVPR_AstraNav-Memory.pdf",
+      "source_anchor": "Fig. 2 与 §3.1–3.3，PDF 第 4–5 页；Table 2，第 6 页；Tables 3–4，第 7 页。"
+    },
+    {
+      "id": "janusvln",
+      "paper": "JanusVLN",
+      "primary_category": "视觉语言动作决策与视频记忆",
+      "folder": "05_视觉语言动作决策与视频记忆",
+      "secondary_tags": [
+        "双分支隐式记忆",
+        "RGB 空间先验",
+        "路线指令导航"
+      ],
+      "reason": "语义与空间双分支维护 KV 记忆，融合后预测离散动作；空间先验不同于显式三维场景图。",
+      "pdf": "HM3D_OVON_Papers/05_视觉语言动作决策与视频记忆/ICLR-2026-janusvln-decoupling-semantics-and-spatiality-with-dual-implicit-memory-for-vision-language-navigation-Paper-Conference.pdf",
+      "previous_pdf": "HM3D_OVON_Papers/2026/ICLR/ICLR-2026-janusvln-decoupling-semantics-and-spatiality-with-dual-implicit-memory-for-vision-language-navigation-Paper-Conference.pdf",
+      "source_anchor": "§3.2–3.3，PDF 第 4–6 页；Fig. 2、Eqs. 2/4；Tables 1–2，第 8 页。"
+    },
+    {
+      "id": "omninav",
+      "paper": "OmniNav",
+      "primary_category": "视觉语言动作决策与视频记忆",
+      "folder": "05_视觉语言动作决策与视频记忆",
+      "secondary_tags": [
+        "大模型规划与工具调用",
+        "语义地图与前沿探索",
+        "快慢分工",
+        "连续 waypoint"
+      ],
+      "reason": "主要模型路线是快慢系统：慢 VLM 选择子目标，快策略生成连续 waypoints；地图探索是交叉机制。",
+      "pdf": "HM3D_OVON_Papers/05_视觉语言动作决策与视频记忆/2026_ICLR_OmniNav.pdf",
+      "previous_pdf": "HM3D_OVON_Papers/2026/ICLR/2026_ICLR_OmniNav.pdf",
+      "source_anchor": "Fig. 1 与 §3，PDF 第 4–6 页；训练设置第 7–8 页；Table 2，第 8 页。"
+    },
+    {
+      "id": "d3dvlp",
+      "paper": "D3D-VLP",
+      "primary_category": "三维空间表征与目标推理",
+      "folder": "04_三维空间表征与目标推理",
+      "secondary_tags": [
+        "大模型规划与工具调用",
+        "联合训练与部分监督"
+      ],
+      "reason": "动态三维特征场及多层次空间 tokens 支撑计划、grounding 和 waypoint 的联合模型。",
+      "pdf": "HM3D_OVON_Papers/04_三维空间表征与目标推理/2026_CVPR_D3D-VLP.pdf",
+      "previous_pdf": "HM3D_OVON_Papers/2026/CVPR/2026_CVPR_D3D-VLP.pdf",
+      "source_anchor": "Figs. 2–3，PDF 第 3–4 页；SLFS 第 5–6 页；§4.1、第 6 页；Tables 2–4，第 7 页。"
+    },
+    {
+      "id": "softnav",
+      "paper": "SoftNav",
+      "primary_category": "三维空间表征与目标推理",
+      "folder": "04_三维空间表征与目标推理",
+      "secondary_tags": [
+        "视觉语言动作决策与视频记忆",
+        "soft tokens",
+        "LoRA 适配"
+      ],
+      "reason": "核心接口是把三维物体/frontier queries 投影为 VLM soft tokens，输出探索坐标。",
+      "pdf": "HM3D_OVON_Papers/04_三维空间表征与目标推理/2607.14586v1.pdf",
+      "previous_pdf": "HM3D_OVON_Papers/2607.14586v1.pdf",
+      "source_anchor": "Fig. 2/§III，PDF 第 3 页；§IV-A，第 4 页；Tables II/V，第 5–6 页；Fig. 5，第 7 页。"
+    }
+  ],
+  "alternate_versions": [
+    {
+      "pdf": "HM3D_OVON_Papers/00_数据集与任务基准/备用版本/2409.14296v1.pdf",
+      "note": "HM3D-OVON 原有另一副本；正文相同，二进制不同。"
+    },
+    {
+      "pdf": "HM3D_OVON_Papers/04_三维空间表征与目标推理/备用版本/Huang_MSGNav_Unleashing_the_Power_of_Multi-modal_3D_Scene_Graph_for_CVPR_2026_paper.pdf",
+      "note": "MSGNav 原有重复副本。"
+    }
+  ]
+}
