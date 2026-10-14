@@ -1,6 +1,6 @@
 {
-  "as_of": "2026-10-07",
-  "scope": "17 distinct local studies; 19 primary/alternate PDF copies. Generated reports and reading notes are not separate studies.",
+  "as_of": "2026-10-14",
+  "scope": "18 indexed local studies; 20 indexed primary/alternate PDF copies. Other unindexed files, generated reports, and reading notes are not included in these counts.",
   "classification_rule": "One primary method category per paper, with secondary tags for overlaps. Dates and venues remain bibliographic metadata only.",
   "categories": [
     {
@@ -276,6 +276,84 @@
       "pdf": "HM3D_OVON_Papers/04_三维空间表征与目标推理/2607.14586v1.pdf",
       "previous_pdf": "HM3D_OVON_Papers/2607.14586v1.pdf",
       "source_anchor": "Fig. 2/§III，PDF 第 3 页；§IV-A，第 4 页；Tables II/V，第 5–6 页；Fig. 5，第 7 页。"
+    },
+    {
+      "id": "supernav",
+      "paper": "SuperNav",
+      "primary_category": "大模型规划与工具调用",
+      "folder": "03_大模型规划与工具调用",
+      "secondary_tags": [
+        "多模态视觉点导航",
+        "技能指引与工具执行",
+        "任务进度与上下文管理",
+        "闭环目标核验与恢复"
+      ],
+      "reason": "预训练多模态大模型通过智能体循环按需读取技能、选择视觉目的地并调用导航工具；核心贡献是工具接口和持续任务管理。",
+      "pdf": "HM3D_OVON_Papers/03_大模型规划与工具调用/SuperNav.pdf",
+      "previous_pdf": "HM3D_OVON_Papers/SuperNav.pdf",
+      "source_anchor": "§3.1–3.3，PDF 第 4–6 页；Fig. 2，第 4 页；可选学习式执行器训练见 Appendix C，第 18–20 页。",
+      "bibliography": {
+        "itemType": "preprint",
+        "title": "SuperNav: An Agentic Navigation System for Any Task in Any Scene",
+        "creators": [
+          {
+            "creatorType": "author",
+            "firstName": "Jinkai",
+            "lastName": "Zhang"
+          },
+          {
+            "creatorType": "author",
+            "firstName": "Jingyi",
+            "lastName": "Xu"
+          },
+          {
+            "creatorType": "author",
+            "firstName": "Yuanhong",
+            "lastName": "Yu"
+          },
+          {
+            "creatorType": "author",
+            "firstName": "Jiarui",
+            "lastName": "Guo"
+          },
+          {
+            "creatorType": "author",
+            "firstName": "Ruizhen",
+            "lastName": "Hu"
+          },
+          {
+            "creatorType": "author",
+            "firstName": "Hujun",
+            "lastName": "Bao"
+          },
+          {
+            "creatorType": "author",
+            "firstName": "Xiaowei",
+            "lastName": "Zhou"
+          },
+          {
+            "creatorType": "author",
+            "firstName": "Sida",
+            "lastName": "Peng"
+          }
+        ],
+        "date": "2026-10-08",
+        "repository": "arXiv",
+        "archiveID": "2610.12126",
+        "DOI": "10.48550/arXiv.2610.12126",
+        "url": "https://arxiv.org/abs/2610.12126",
+        "language": "en",
+        "shortTitle": "SuperNav",
+        "libraryCatalog": "arXiv",
+        "extra": "Version: arXiv:2610.12126v1\nProject page: https://zju3dv.github.io/SuperNav/",
+        "relations": {}
+      },
+      "bibliography_sources": [
+        "https://arxiv.org/abs/2610.12126",
+        "https://zju3dv.github.io/SuperNav/"
+      ],
+      "sha256": "5078c0fbcc6bb3321857286ab1f8eaa19075203ac35fa20ee83c75c0642ddaaf",
+      "pages": 20
     }
   ],
   "alternate_versions": [

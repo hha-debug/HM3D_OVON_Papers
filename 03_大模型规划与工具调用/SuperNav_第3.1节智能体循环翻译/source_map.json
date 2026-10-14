@@ -1,0 +1,110 @@
+{
+  "paper": {
+    "title": "SuperNav: An Agentic Navigation System for Any Task in Any Scene",
+    "source_type": "text",
+    "language": "en",
+    "source_path": "用户在当前聊天粘贴的第 3.1 节 Agent Loop",
+    "scope": "section excerpt",
+    "status": "draft_excerpt"
+  },
+  "blocks": [
+    {
+      "id": "S001",
+      "page": null,
+      "section": "3.1 Agent Loop",
+      "type": "heading",
+      "order": 1,
+      "original_text": "3.1 AGENT LOOP",
+      "translation": "3.1 智能体循环",
+      "bbox": null,
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S002",
+      "page": null,
+      "section": "3.1 Agent Loop",
+      "type": "paragraph",
+      "order": 2,
+      "original_text": "Continuous decision-making. The agent loop organizes the request, visual observations, and interaction history into a continuing navigation process. Initialization opens a session and returns the first observation, from which the MLLM interprets the requested goals and completion conditions. At each subsequent step, it uses the current context and task progress to choose an operation: observe, move, update goal state, or read relevant Skill guidance. Tool returns and retrieved instructions enter the context for the next decision, allowing execution feedback to change the MLLM’s plan. For example, after approaching a candidate, the MLLM inspects the new images, judges whether the candidate satisfies the request, and either records completion or continues searching.",
+      "translation": "持续决策。智能体循环将请求、视觉观察和交互历史组织成一个持续进行的导航过程。初始化时，系统开启一个会话，并返回首次观察结果，MLLM 据此理解请求中的目标及任务完成条件。在随后的每一步中，MLLM 根据当前上下文和任务进度选择一种操作：观察、移动、更新目标状态，或读取相关技能指导。工具返回的结果和读取到的指导说明会进入下一次决策的上下文，使执行反馈能够改变 MLLM 的计划。例如，在接近一个候选目标后，MLLM 会检查新的图像，判断该候选目标是否满足请求，并据此记录完成状态或继续搜索。",
+      "bbox": null,
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S003",
+      "page": null,
+      "section": "3.1 Agent Loop",
+      "type": "paragraph",
+      "order": 3,
+      "original_text": "Task state and context management. Long-horizon execution requires these local decisions to remain connected to earlier evidence and unfinished goals. Goal records maintain pending and completed items, while textual interaction history retains inspected areas, candidate clues, and failed attempts for later decisions. To control the growing image context, the harness removes an image’s media payload from subsequent requests once it has been processed and superseded by newer observations. It preserves textual history, task state, and image paths; the MLLM can request earlier images from the workspace when needed. This media-only pruning limits repeated image transmission while retaining access to earlier evidence and task progress.",
+      "translation": "任务状态与上下文管理。长时程执行要求这些局部决策始终与先前的证据和未完成的目标保持关联。目标记录保存待完成项和已完成项，而文本形式的交互历史则保留已经检查的区域、候选目标线索和失败尝试，供后续决策使用。为了控制不断增长的图像上下文，运行框架会在某幅图像已被处理、且被更新的观察结果替代后，将该图像的媒体内容从后续请求中移除。运行框架仍保留文本历史、任务状态和图像路径；MLLM 可以在需要时请求读取工作区中的早期图像。这种仅针对媒体内容的裁剪减少了图像的重复传输，同时保留了对先前证据和任务进度的访问。",
+      "bbox": null,
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S004",
+      "page": null,
+      "section": "3.1 Agent Loop",
+      "type": "paragraph",
+      "order": 4,
+      "original_text": "Task termination. The MLLM judges whether the request is satisfied or execution is blocked from the observations and progress records, and selects the termination Tool to end the loop. A termination Tool records either declared outcome and closes the session; successful closure confirms that the session ended, not that the task succeeded. Benchmark scoring evaluates success separately from this declaration. The loop therefore depends on operations that expose observations, execute motion, and maintain state, whose interfaces we describe next; runtime restrictions and execution limits appear in Appendix A.",
+      "translation": "任务终止。MLLM 根据观察结果和进度记录，判断请求是否已得到满足，或执行过程是否受阻，并选择终止工具结束循环。终止工具记录模型声明的结果（任务已完成或执行受阻），并关闭会话；成功关闭会话只能确认会话已经结束，并不能证明任务已经成功完成。基准评测中的评分会独立于这一声明判断任务是否成功。因此，这一循环依赖于能够提供观察结果、执行运动和维护状态的操作。接下来我们将介绍这些操作的接口；运行时约束和执行限制见附录 A。",
+      "bbox": null,
+      "confidence": "high",
+      "refs": []
+    }
+  ],
+  "pages": [],
+  "figures": [],
+  "equations": [],
+  "glossary": [
+    {
+      "term": "Agent loop",
+      "translation": "智能体循环",
+      "note": "与上一部分保持一致"
+    },
+    {
+      "term": "MLLM",
+      "translation": "多模态大语言模型",
+      "note": "multimodal large language model；沿用上一部分的首次定义"
+    },
+    {
+      "term": "harness",
+      "translation": "运行框架",
+      "note": "沿用第 3 节概述的译法"
+    },
+    {
+      "term": "Skills / Skill guidance",
+      "translation": "技能 / 技能指导",
+      "note": "模型可读取的指导说明"
+    },
+    {
+      "term": "Tools / Tool calls",
+      "translation": "工具 / 工具调用",
+      "note": "可调用的操作"
+    },
+    {
+      "term": "task state",
+      "translation": "任务状态",
+      "note": "与目标状态和任务进度区分"
+    },
+    {
+      "term": "context",
+      "translation": "上下文",
+      "note": "与上下文管理保持同一译法"
+    },
+    {
+      "term": "media-only pruning",
+      "translation": "仅针对媒体内容的裁剪",
+      "note": "移除后续请求中的旧图像媒体内容，保留文本、状态和路径"
+    },
+    {
+      "term": "Task termination",
+      "translation": "任务终止",
+      "note": "关闭会话与任务成功分别表述"
+    }
+  ]
+}

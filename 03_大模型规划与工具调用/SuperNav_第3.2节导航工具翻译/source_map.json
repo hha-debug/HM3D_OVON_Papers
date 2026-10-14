@@ -1,0 +1,200 @@
+{
+  "paper": {
+    "title": "SuperNav: An Agentic Navigation System for Any Task in Any Scene",
+    "source_type": "text",
+    "language": "en",
+    "source_path": "用户在当前聊天粘贴的第 3.2 节",
+    "scope": "section excerpt",
+    "status": "draft_excerpt",
+    "page_numbering": "virtual_single_pasted_text_page",
+    "original_page_numbers_available": false
+  },
+  "blocks": [
+    {
+      "id": "S001",
+      "page": 1,
+      "section": "3.2 Agent-oriented Navigation Tools",
+      "type": "heading",
+      "order": 1,
+      "original_text": "3.2 AGENT-ORIENTED NAVIGATION TOOLS",
+      "translation": "3.2 面向智能体的导航工具",
+      "bbox": null,
+      "confidence": "high",
+      "refs": [],
+      "original_page": null,
+      "page_is_virtual": true
+    },
+    {
+      "id": "S002",
+      "page": 1,
+      "section": "3.2 Agent-oriented Navigation Tools",
+      "type": "paragraph",
+      "order": 2,
+      "original_text": "Tool suite and design principles. Agent-oriented Tools connect the MLLM’s navigation decisions to executable environment operations. The suite covers initialization, observation, turning, visual-point navigation, goal-progress management, and termination. Its design makes inputs easy for the MLLM to specify and returns useful for the next decision, while keeping destination representations consistent across motion backends. The central observation–motion interface implements these principles by pairing visual destinations with updated observations and execution feedback.",
+      "translation": "工具集与设计原则。面向智能体的工具将 MLLM 的导航决策与可执行的环境操作连接起来。该工具集涵盖初始化、观察、转向、视觉点导航、目标进度管理和终止。其设计使 MLLM 能够方便地指定输入，并使返回结果有助于下一次决策，同时保证不同运动执行后端采用一致的目的地表示。核心的观察—运动接口通过将图像中指定的目的地与更新后的观察结果及执行反馈相配对，落实上述设计原则。",
+      "bbox": null,
+      "confidence": "high",
+      "refs": [],
+      "original_page": null,
+      "page_is_virtual": true
+    },
+    {
+      "id": "S003",
+      "page": 1,
+      "section": "3.2 Agent-oriented Navigation Tools",
+      "type": "paragraph",
+      "order": 3,
+      "original_text": "Observation and visual-point navigation. An observation returns four RGB images labeled front, right, back, and left, relative to the robot’s heading at capture. These labels let the MLLM associate a candidate or passage with a particular view and select a destination through",
+      "translation": "观察与视觉点导航。一次观察会返回四张 RGB 图像，分别标记为前、右、后、左；这些方向以拍摄时机器人的朝向为基准。这些标签使 MLLM 能够将候选目标或通道与特定视角关联起来，并通过以下接口选择目的地：",
+      "bbox": null,
+      "confidence": "high",
+      "refs": [
+        "E001"
+      ],
+      "original_page": null,
+      "page_is_virtual": true
+    },
+    {
+      "id": "E001",
+      "page": 1,
+      "section": "3.2 Agent-oriented Navigation Tools",
+      "type": "equation",
+      "order": 4,
+      "original_text": "PointNav(d, [u, v]), u, v ∈ [0, 1],",
+      "translation": null,
+      "equation_number": null,
+      "latex": "\\operatorname{PointNav}(d,[u,v]),\\qquad u,v\\in[0,1],",
+      "bbox": null,
+      "confidence": "high",
+      "image_path": null,
+      "original_page": null,
+      "page_is_virtual": true
+    },
+    {
+      "id": "S004",
+      "page": 1,
+      "section": "3.2 Agent-oriented Navigation Tools",
+      "type": "paragraph",
+      "order": 5,
+      "original_text": "where $d$ identifies the view and $u$, $v$ are horizontal and vertical coordinates normalized from its top-left corner. The Agent may select a point on a candidate or on visible floor to approach a target or obtain a new view. The Tool executes the movement internally and returns new fourview images, execution status, and concise diagnostics; the turning Tool provides the same types of feedback. These returns connect destination selection to visual rechecking without requiring a separate observation call after every movement.",
+      "translation": "其中，$d$ 表示视角，$u$、$v$ 分别为以图像左上角为原点的归一化水平坐标和垂直坐标。智能体可以选择候选目标上的一点，或可见地面上的一点，以接近目标或获得新的视角。工具在内部执行移动，并返回新的四方向图像、执行状态和简要诊断信息；转向工具也提供相同类型的反馈。这些返回结果将目的地选择与视觉复核衔接起来，无需在每次移动后额外调用一次观察工具。",
+      "bbox": null,
+      "confidence": "high",
+      "refs": [
+        "E001"
+      ],
+      "original_page": null,
+      "page_is_virtual": true
+    },
+    {
+      "id": "S005",
+      "page": 1,
+      "section": "3.2 Agent-oriented Navigation Tools",
+      "type": "paragraph",
+      "order": 6,
+      "original_text": "Interchangeable motion backends. The visual-point interface separates destination selection from the mechanism that executes it. The geometric backend, termed Geo-based Executor, uses depth, camera calibration, and pose to associate the selected point with an environment location, then plans and follows a path to a reachable goal. Simulation supplies rendered depth, camera poses, and navigation geometry, while robot deployment uses sensed geometry and localization (Appendix A.1). The learned backend, Learned Executor, is inspired by NoMaD’s goal-conditioned generative-policy design (Sridhar et al., 2024), replacing destination-image goals with marked points in reference observations. It predicts local displacement increments and a stopping signal from the selected image–point pair and recent RGB observations. It turns toward the selected view and repeatedly executes short predicted motion segments within one Tool call. Both backends accept visual destinations and return observations with execution feedback, so the Agent can retain the same decision workflow; learned-controller architecture and training details are deferred to Appendix C.",
+      "translation": "可互换的运动执行后端。视觉点接口将目的地选择与运动执行机制分离。几何式后端称为几何式执行器（Geo-based Executor），利用深度、相机标定信息和位姿，将所选点对应到环境中的一个位置，然后规划路径并沿路径前往可达的目标位置。仿真环境提供渲染得到的深度、相机位姿和用于导航的几何信息；机器人部署则使用传感器获取的几何信息和定位结果（附录 A.1）。学习式后端称为学习式执行器（Learned Executor），其设计受到 NoMaD 基于目标条件的生成式策略启发（Sridhar et al., 2024），将以目的地图像表示的目标替换为参考观察图像中标记的点。它根据所选的图像—点对和近期 RGB 观察，预测局部位移增量及停止信号。它会转向所选视角的方向，并在一次工具调用内部反复执行预测得到的短程运动片段。两种后端都接受图像中指定的目的地，并返回观察结果与执行反馈，因此智能体能够保持相同的决策流程；学习式控制器的架构与训练细节见附录 C。",
+      "bbox": null,
+      "confidence": "high",
+      "refs": [],
+      "original_page": null,
+      "page_is_virtual": true
+    },
+    {
+      "id": "S006",
+      "page": 1,
+      "section": "3.2 Agent-oriented Navigation Tools",
+      "type": "paragraph",
+      "order": 7,
+      "original_text": "Progress and termination. Progress and termination Tools extend this workflow from individual movements to complete requests. The progress Tool lets the MLLM query or update pending/found goals and continue with the remaining items; the termination Tool records its achieved/blocked judgment and closes the session. These records represent the MLLM’s reports rather than independent semantic verification. Deciding when to search further, recheck a candidate, or recover from failed motion thus remains the MLLM’s responsibility, for which Skills provide reusable guidance.",
+      "translation": "进度与终止。进度工具和终止工具将这一流程从单次移动扩展到完整请求的处理。进度工具使 MLLM 能够查询或更新待完成／已找到的目标，并继续处理剩余目标；终止工具记录其关于任务已完成或执行受阻的判断，并关闭会话。这些记录反映的是 MLLM 的报告，而非独立的语义核验结果。因此，何时继续搜索、复核候选目标，或从失败的移动中恢复，仍由 MLLM 负责判断，技能为这些决策提供可复用的指导。",
+      "bbox": null,
+      "confidence": "high",
+      "refs": [],
+      "original_page": null,
+      "page_is_virtual": true
+    }
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "virtual": true,
+      "label": "本次粘贴文本的虚拟输入页；不是原论文页码",
+      "block_ids": [
+        "S001",
+        "S002",
+        "S003",
+        "E001",
+        "S004",
+        "S005",
+        "S006"
+      ]
+    }
+  ],
+  "figures": [],
+  "equations": [
+    {
+      "id": "E001",
+      "page": 1,
+      "equation_number": null,
+      "latex": "\\operatorname{PointNav}(d,[u,v]),\\qquad u,v\\in[0,1],",
+      "bbox": null,
+      "confidence": "high",
+      "image_path": null,
+      "original_page": null,
+      "page_is_virtual": true
+    }
+  ],
+  "glossary": [
+    {
+      "term": "agent-oriented Tools",
+      "translation": "面向智能体的工具",
+      "note": "沿用前文译法"
+    },
+    {
+      "term": "MLLM",
+      "translation": "多模态大语言模型",
+      "note": "multimodal large language model；沿用前文的首次定义"
+    },
+    {
+      "term": "visual-point navigation",
+      "translation": "视觉点导航",
+      "note": "通过图像中的点指定目的地"
+    },
+    {
+      "term": "visual-point interface",
+      "translation": "视觉点接口",
+      "note": "视角与归一化图像坐标构成的接口"
+    },
+    {
+      "term": "Geo-based Executor",
+      "translation": "几何式执行器",
+      "note": "使用深度、标定与位姿进行目标定位和运动执行"
+    },
+    {
+      "term": "Learned Executor",
+      "translation": "学习式执行器",
+      "note": "依据 RGB 观察与图像—点对预测运动"
+    },
+    {
+      "term": "goal-conditioned generative policy",
+      "translation": "基于目标条件的生成式策略",
+      "note": "保留生成式策略的目标条件含义"
+    },
+    {
+      "term": "goal-progress management",
+      "translation": "目标进度管理",
+      "note": "查询或更新待完成／已找到的目标"
+    },
+    {
+      "term": "semantic verification",
+      "translation": "语义核验",
+      "note": "与模型自行报告区分"
+    },
+    {
+      "term": "Skills",
+      "translation": "技能",
+      "note": "模型可读取的可复用指导"
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "paper": {
+    "title": "SuperNav: An Agentic Navigation System for Any Task in Any Scene",
+    "source_type": "text",
+    "language": "en",
+    "source_path": "用户在当前聊天中粘贴的第 3 节概述及图 2 图注、标签",
+    "scope": "section excerpt",
+    "status": "draft_excerpt"
+  },
+  "blocks": [
+    {
+      "id": "S001",
+      "page": null,
+      "section": "3 Navigation Agent Harness / Overview",
+      "type": "heading",
+      "order": 1,
+      "original_text": "3 NAVIGATION AGENT HARNESS",
+      "translation": "3 导航智能体运行框架",
+      "bbox": null,
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S002",
+      "page": null,
+      "section": "3 Navigation Agent Harness / Overview",
+      "type": "paragraph",
+      "order": 2,
+      "original_text": "Overview. SuperNav combines a pretrained MLLM with a navigation-specific harness to form an embodied navigation Agent that sustains decisions and actions across different requests. A request may specify a target, an ordered sequence of targets, or a high-level need; the Agent must interpret that request and act until it can judge whether the completion conditions are met. The MLLM performs this interpretation and decision-making, while the harness organizes execution and context through an agent loop.",
+      "translation": "概述。SuperNav 将预训练的多模态大语言模型（MLLM）与专为导航设计的运行框架相结合，构建一个具身导航智能体，使其能够针对不同请求持续作出决策并执行动作。请求可以指定一个目标、一个有序的目标序列，或某种高层需求；智能体必须理解该请求，并持续行动，直至能够判断任务的完成条件是否满足。MLLM 负责请求理解与决策，而运行框架通过智能体循环组织执行过程和上下文。",
+      "bbox": null,
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "S003",
+      "page": null,
+      "section": "3 Navigation Agent Harness / Overview",
+      "type": "paragraph",
+      "order": 3,
+      "original_text": "Within this loop, agent-oriented Tools are callable operations for observation, motion, and task-state management, and Navigation Skills are instructions the MLLM can read for search, verification, and recovery. As illustrated in Figure 2, the MLLM interprets observations, selects a Tool call, and uses the returned feedback to decide again, consulting Skills when relevant.",
+      "translation": "在这一循环中，面向智能体的工具是可调用的操作，用于观察、运动和任务状态管理；导航技能则是 MLLM 可以读取的指导说明，用于搜索、核验与恢复。如图 2 所示，MLLM 理解观察结果，选择要调用的工具，并利用工具返回的反馈再次作出决策，在需要时查阅相关技能说明。",
+      "bbox": null,
+      "confidence": "high",
+      "refs": [
+        "F001"
+      ]
+    },
+    {
+      "id": "C001",
+      "page": null,
+      "section": "3 Navigation Agent Harness / Overview",
+      "type": "caption",
+      "order": 5,
+      "original_text": "Figure 2: Navigation with Skills and agent-oriented Tools. (a) The Agent loop maintains context for MLLM reasoning, Skill loading, and Tool calls. (b) Navigation Skills guide search, candidate rechecking, recovery, and completion; the recovery example shows the Agent retracing its path after a blocked passage. (c) Agent-oriented Tools support observation, motion, goal-progress tracking, and task closure. Point navigation shares an image-space goal interface across geometric and learned execution backends.",
+      "translation": "图 2：借助技能与面向智能体的工具进行导航。（a）智能体循环维护上下文，以支持 MLLM 推理、技能加载和工具调用。（b）导航技能指导搜索、候选目标复核、恢复与任务完成；其中，恢复示例展示了智能体在通道受阻后沿来路返回的过程。（c）面向智能体的工具支持观察、运动、目标进度跟踪和任务结束。点目标导航在几何式与学习式执行后端之间采用统一的图像空间目标接口。",
+      "bbox": null,
+      "confidence": "high",
+      "refs": [
+        "F001"
+      ]
+    },
+    {
+      "id": "S004",
+      "page": null,
+      "section": "3 Navigation Agent Harness / Overview",
+      "type": "paragraph",
+      "order": 6,
+      "original_text": "We first describe how the loop coordinates these capabilities (Section 3.1), then develop the Tool interfaces (Section 3.2) and Skill guidance (Section 3.3).",
+      "translation": "我们首先介绍这一循环如何协调上述能力（第 3.1 节），随后说明工具接口（第 3.2 节）与技能指导（第 3.3 节）。",
+      "bbox": null,
+      "confidence": "high",
+      "refs": []
+    },
+    {
+      "id": "T001",
+      "page": null,
+      "type": "table",
+      "order": 7,
+      "original_text": "Agent loop\nAgent context\nSystem prompt\nTask instruction\nHistory\nMLLM / VLM\nReasoning\nContext update\nAction\nLoad Skill\nCall Tool\nRead on demand\nNavigation Skills\nSearch\nRecheck\nRecover\nComplete\nAgent decision\nSearch context\nRecovery skill\nRetrace path\nEnter\nBlocked\nGo back\nAgent-oriented Tools\nInitialize\nObserve\nTurn\nGoal progress\nClose\nPoint Navigate\n(view, [u, v])\nImage-space goal\nfront / right / back / left\nu, v: 0-1\nGeometric\nBack-project\nPlan and follow\nor\nLearned\nRGB-only\nPredict / execute / replan\n4-view RGB\nF / R / B / L\nStatus\nDiagnostics",
+      "translation": "智能体循环\n智能体上下文\n系统提示\n任务指令\n历史记录\n多模态大语言模型 / 视觉语言模型\n推理\n上下文更新\n行动\n加载技能\n调用工具\n按需读取\n导航技能\n搜索\n复核\n恢复\n完成\n智能体决策\n检索上下文\n恢复技能\n沿来路返回\n进入\n受阻\n返回\n面向智能体的工具\n初始化\n观察\n转向\n目标进度\n关闭会话\n点目标导航\n（视角，[u, v]）\n图像空间目标\n前 / 右 / 后 / 左\nu、v 的范围为 0-1\n几何式\n反投影\n路径规划与跟随\n或\n学习式\n仅使用 RGB\n预测 / 执行 / 重新规划\n四方向 RGB 图像\n前 / 右 / 后 / 左\n状态\n诊断信息",
+      "confidence": "high",
+      "refs": [
+        "F001"
+      ]
+    }
+  ],
+  "pages": [],
+  "figures": [
+    {
+      "id": "F001",
+      "page": null,
+      "caption_id": "C001",
+      "image_path": "assets/figure2.png",
+      "original_attachment_path": "C:\\Users\\horizona\\AppData\\Local\\Temp\\codex-clipboard-d88a7f91-e9cc-4b2f-afc3-ca9bfa928d5e.png",
+      "bbox": null,
+      "placement_hint": "near_first_mention",
+      "placed_after": "S003",
+      "alt_text": "图 2：导航技能、智能体循环与导航工具"
+    }
+  ],
+  "equations": [],
+  "glossary": [
+    {
+      "term": "MLLM",
+      "translation": "多模态大语言模型",
+      "note": "multimodal large language model"
+    },
+    {
+      "term": "VLM",
+      "translation": "视觉语言模型",
+      "note": "vision-language model"
+    },
+    {
+      "term": "navigation agent harness",
+      "translation": "导航智能体运行框架",
+      "note": "harness 指组织决策、执行与上下文的运行框架"
+    },
+    {
+      "term": "Agent",
+      "translation": "智能体",
+      "note": "embodied navigation Agent 译为具身导航智能体"
+    },
+    {
+      "term": "Navigation Skills",
+      "translation": "导航技能",
+      "note": "模型可读取的指导说明"
+    },
+    {
+      "term": "agent-oriented Tools",
+      "translation": "面向智能体的工具",
+      "note": "可调用的环境操作"
+    },
+    {
+      "term": "context",
+      "translation": "上下文",
+      "note": "Agent context / Context update 中保持同一译法"
+    },
+    {
+      "term": "Point Navigate / Point navigation",
+      "translation": "点目标导航",
+      "note": "图内标签与图注采用相同译法"
+    }
+  ]
+}

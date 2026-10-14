@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>论文 × 编码器：功能与训练关系图</title>
+<style>
+*{box-sizing:border-box}body{margin:0;color:#152a45;background:#f5f8fc;font:15px/1.65 'Microsoft YaHei',sans-serif}header{height:76px;background:#152a45;color:#fff;padding:13px 24px;display:flex;align-items:center;gap:20px}header h1{margin:0;font-size:21px}header p{margin:0;color:#b8cce4;font-size:12px}.toolbar{display:flex;gap:8px;align-items:center;margin-left:auto}button,select,input{font:inherit;border:1px solid #c7d6e8;border-radius:7px;padding:7px 10px;background:#fff;color:#19364f}button{cursor:pointer}button:hover{background:#edf3fd}.layout{display:grid;grid-template-columns:minmax(0,1fr) 380px;height:calc(100vh - 76px)}#viewport{overflow:auto;position:relative;background:#e8edf4}#surface{position:relative;margin:16px}#drawing{position:absolute;left:0;top:0;transform-origin:0 0}#drawing svg{display:block}aside{background:#fff;padding:20px;overflow:auto;border-left:1px solid #d2dfed}h2{font-size:21px;margin:0 0 8px}h3{font-size:15px;margin:19px 0 6px}.muted{color:#62748c}.tag{font-size:12px;border-radius:5px;padding:3px 6px;background:#eaf2ff;color:#2b64aa}.note{padding:10px 12px;background:#fff5df;border-left:3px solid #c28a20;border-radius:5px}.choices{display:flex;flex-wrap:wrap;gap:5px}.choices button{font-size:12px;padding:4px 7px}.sources a{color:#2b64aa;word-break:break-word}#search{width:210px}#matches{margin-bottom:18px}#matches button{display:block;width:100%;text-align:left;margin:4px 0;font-size:13px}.selected{filter:drop-shadow(0 0 7px #377ac5)}.dim{opacity:.2}g[data-node]{cursor:pointer;transition:opacity .15s}g[data-node]:hover>rect:first-child{stroke:#2b64aa;stroke-width:4}g[data-node]:focus{outline:none}g[data-node]:focus>rect:first-child{stroke:#2b64aa;stroke-width:4}.count{color:#c8daf0;font-size:12px;min-width:42px}a{color:#2b64aa}p{margin:7px 0}@media(max-width:1000px){header{height:auto;flex-wrap:wrap}.toolbar{margin-left:0;flex-wrap:wrap}.layout{grid-template-columns:minmax(0,1fr) 310px;height:calc(100vh - 132px)}#search{width:160px}}
+</style>
+</head>
+<body>
+<header><div><h1>论文 × 编码器关系图</h1><p>18 篇论文 + 2 篇基础依赖 · 点击节点查看功能、训练状态与来源</p></div><div class="toolbar"><input id="search" type="search" placeholder="搜索论文、编码器或功能" aria-label="搜索"><select id="paperPicker" aria-label="跳转论文"><option value="">跳转论文</option></select><button id="minus" aria-label="缩小">−</button><span id="zoomLabel" class="count"></span><button id="plus" aria-label="放大">＋</button><button id="fit">适配宽度</button><button id="reset">清除高亮</button></div></header>
+<div class="layout"><main id="viewport"><div id="surface"><div id="drawing">__SVG__</div></div></main><aside><div id="matches"></div><div id="details"><h2>怎样阅读这张图</h2><p>先看上方已确认的论文继承链，再看每篇论文的感知、表征、决策流程。</p><p>下方 E / P / A 功能索引给出各模块的输入、输出、用途及使用者。</p><div class="note">训练状态随论文和训练阶段变化。图中“未明确”的范围保留原文边界，不补猜冻结状态。</div><h3>操作</h3><p>选择论文会跳转并放大卡片；点击编码器会高亮使用它的论文。图可以横向、纵向滚动。</p><h3>导出与来源</h3><p class="sources"><a href="论文编码器详细关系图.svg" download>下载 SVG 矢量图</a><br><a href="论文编码器详细关系图.png" download>下载完整 PNG</a><br><a href="编码器功能说明.md">编码器功能说明</a><br><a href="../论文编码器关系总表.md">原始总表</a></p></div></aside></div>
+<script>
+const DATA=__DATA__;
+const lookup=new Map([...DATA.papers.map(p=>[p.id,{...p,type:'paper'}]),...DATA.modules.map(m=>[m.id,{...m,type:'module'}])]);
+const nodes=[...document.querySelectorAll('g[data-node]')];
+const viewport=document.querySelector('#viewport'),surface=document.querySelector('#surface'),drawing=document.querySelector('#drawing');
+const details=document.querySelector('#details'),matches=document.querySelector('#matches'),picker=document.querySelector('#paperPicker');
+let scale=.5,selectedId=null;
+function escapeHTML(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function setZoom(v){scale=Math.max(.16,Math.min(1.8,v));drawing.style.transform=`scale(${scale})`;surface.style.width=`${DATA.width*scale}px`;surface.style.height=`${DATA.height*scale}px`;document.querySelector('#zoomLabel').textContent=`${Math.round(scale*100)}%`;}
+function fit(){setZoom((viewport.clientWidth-32)/DATA.width);}
+function sourceHref(p){return p.source.startsWith('https://')?p.source:'../'+p.source;}
+function usesModule(p,id){return p.modules.includes(id)||(DATA.indirect_usage||[]).some(u=>u.paper===p.id&&u.module===id);}
+function usageLabel(p,id){const via=(DATA.indirect_usage||[]).find(u=>u.paper===p.id&&u.module===id);return via?via.label:(p.module_scopes||{})[id]||'';}
+function select(id,jump=false){
+ const item=lookup.get(id);if(!item)return;selectedId=id;matches.innerHTML='';picker.value=item.type==='paper'?id:'';
+ const relevant=item.type==='paper'?new Set([id,...item.modules]):new Set([id,...DATA.papers.filter(p=>usesModule(p,id)).map(p=>p.id),...(DATA.module_dependencies[id]||[])]);
+ nodes.forEach(n=>{const key=n.dataset.node;n.classList.toggle('dim',!relevant.has(key));n.classList.toggle('selected',key===id);});
+ if(item.type==='module'){
+  const users=DATA.papers.filter(p=>usesModule(p,id));
+  const internals=DATA.module_dependencies[id]||[];
+  details.innerHTML=`<span class="tag">${escapeHTML(item.id)}</span><h2>${escapeHTML(item.name)}</h2><h3>输入 → 输出</h3><p>${escapeHTML(item.io)}</p><h3>对应功能</h3><p>${escapeHTML(item.function)}</p><div class="note">${escapeHTML(item.note)}</div>${internals.length?'<h3>已明确的后端内部组件</h3><div class="choices">'+internals.map(m=>`<button data-select="${m}">${escapeHTML(lookup.get(m).name)}</button>`).join('')+'</div>':''}<h3>使用者及对应范围</h3><div class="choices">${users.map(p=>`<button data-select="${p.id}">${escapeHTML(p.name)}${usageLabel(p,id)?' · '+escapeHTML(usageLabel(p,id)):''}</button>`).join('')}</div><h3>出处</h3><div class="sources">${users.map(p=>`<p><a href="${escapeHTML(sourceHref(p))}">${escapeHTML(p.name)}</a><br><span class="muted">${escapeHTML(p.locator)}</span></p>`).join('')}</div>`;
+ }else{
+  const ancestors=DATA.dependencies.filter(d=>d.target===id),descendants=DATA.dependencies.filter(d=>d.source===id);
+  details.innerHTML=`<span class="tag">${item.kind==='benchmark'?'基准 / 作者基线':item.kind==='foundation'?'基础依赖':'导航方法'}</span><h2>${escapeHTML(item.name)}</h2><p class="muted">${escapeHTML(item.family)}</p><h3>输入编码 / 感知</h3><p>${escapeHTML(item.encoding)}</p><h3>表征 / 连接</h3><p>${escapeHTML(item.representation)}</p><h3>决策模型</h3><p>${escapeHTML(item.decision)}</p><h3>训练与冻结</h3><div class="note">${escapeHTML(item.training)}</div><h3>模块功能</h3><div class="choices">${item.modules.map(id=>`<button data-select="${id}">${escapeHTML(lookup.get(id).name)}</button>`).join('')}</div><h3>已确认的继承关系</h3>${[...ancestors,...descendants].map(d=>`<p>${escapeHTML(lookup.get(d.source).name)} → ${escapeHTML(lookup.get(d.target).name)}<br><span class="muted">${escapeHTML(d.label)}</span></p>`).join('')||'<p class="muted">总表未列出与其他论文的直接继承边。</p>'}<h3>来源</h3><p class="sources"><a href="${escapeHTML(sourceHref(item))}">打开原文</a><br>${escapeHTML(item.locator)}</p>`;
+ }
+ if(jump){setZoom(.85);const b=DATA.paper_bounds[id]||DATA.module_bounds[id];if(b){viewport.scrollLeft=Math.max(0,(b.x+b.w/2)*scale-viewport.clientWidth/2+16);viewport.scrollTop=Math.max(0,b.y*scale-30);}}
+}
+for(const p of DATA.papers){const o=document.createElement('option');o.value=p.id;o.textContent=p.name;picker.append(o);}
+picker.addEventListener('change',()=>{if(picker.value)select(picker.value,true);});
+nodes.forEach(n=>{n.addEventListener('click',()=>select(n.dataset.node));n.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();select(n.dataset.node);}});});
+document.querySelector('aside').addEventListener('click',e=>{const button=e.target.closest('[data-select]');if(button)select(button.dataset.select,true);});
+document.querySelector('#plus').onclick=()=>setZoom(scale*1.25);document.querySelector('#minus').onclick=()=>setZoom(scale/1.25);document.querySelector('#fit').onclick=fit;
+document.querySelector('#reset').onclick=()=>{selectedId=null;nodes.forEach(n=>n.classList.remove('dim','selected'));document.querySelector('#search').value='';matches.innerHTML='';picker.value='';};
+document.querySelector('#search').addEventListener('input',e=>{const q=e.target.value.trim().toLowerCase();if(!q){nodes.forEach(n=>n.classList.remove('dim','selected'));matches.innerHTML='';return;}const hits=[...lookup.values()].filter(i=>[i.name,i.encoding,i.representation,i.decision,i.function,i.io,i.note,...(i.users||[])].filter(Boolean).join(' ').toLowerCase().includes(q));const ids=new Set(hits.map(i=>i.id));nodes.forEach(n=>{n.classList.toggle('dim',!ids.has(n.dataset.node));n.classList.toggle('selected',ids.has(n.dataset.node));});matches.innerHTML=`<h3>${hits.length} 个相关节点</h3>`+hits.slice(0,16).map(i=>`<button data-select="${i.id}">${escapeHTML(i.name)}</button>`).join('');});
+window.addEventListener('resize',()=>{if(!selectedId)fit();});fit();
+window.graphReady=true;
+</script>
+</body></html>
