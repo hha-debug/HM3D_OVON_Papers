@@ -1,0 +1,169 @@
+[
+  {
+    "id": "xb4c3a",
+    "records": [
+      "arch_omni_U",
+      "arch_mtu_goat_U",
+      "arch_omni_r2r",
+      "arch_omni_rxr",
+      "arch_d3d_sg3d",
+      "super_astra025"
+    ],
+    "note": "常规主表的OVON、GOAT和VLN分别显示该方向较高的报告值。SuperNav子集与距离定义不同，不能和常规OVON行作严格排名。",
+    "slide": 3
+  },
+  {
+    "id": "cndzo1",
+    "records": [
+      "arch_omni_S",
+      "arch_omni_Y",
+      "arch_omni_U",
+      "arch_mtu_goat_S",
+      "arch_mtu_goat_Y",
+      "arch_mtu_goat_U",
+      "arch_uni_obj"
+    ],
+    "note": "",
+    "slide": 4
+  },
+  {
+    "id": "rmi1la",
+    "records": [
+      "arch_omni_r2r",
+      "arch_omni_rxr",
+      "arch_d3d_reverie",
+      "arch_d3d_navrag",
+      "arch_d3d_sg3d",
+      "arch_uni_follow"
+    ],
+    "note": "OmniNav是三视角快系统。D3D-VLP的SG3D给定真实计划文本，表中SR分子任务和整任务，SPL取原导航统计。Uni-NaVid人物跟随无SPL。非导航评测包括：TANGO OpenEQA Score=37.2±1.8；MTU3D辅助GPT-4o的A-EQA LLM-SR=51.1、LLM-SPL=42.6；Uni-NaVid MP3D-EQA自主导航ACC=47.3。OmniNav CityWalker MAOE=11.53%。这些指标不能替代普通导航SR/SPL。",
+    "slide": 5
+  },
+  {
+    "id": "wzakhr",
+    "records": [
+      "super_ovon025",
+      "super_ovon1",
+      "super_astra025",
+      "super_astra1",
+      "super_hm302",
+      "super_hm31",
+      "super_single",
+      "super_multi",
+      "super_demand"
+    ],
+    "note": "",
+    "slide": 6
+  },
+  {
+    "id": "ayfvac",
+    "records": [
+      "env_soft_ovon_U",
+      "env_soft_goat_U",
+      "env_msg_goat",
+      "env_msg_hm3d",
+      "env_soft_sg3d"
+    ],
+    "note": "SoftNav GOAT每划分30 episodes，MSGNav GOAT为360 episodes / 2669子任务。两套子集不能当成统一排行榜。",
+    "slide": 9
+  },
+  {
+    "id": "ns239i",
+    "records": [
+      "env_soft_ovon_S",
+      "env_soft_ovon_Y",
+      "env_soft_ovon_U",
+      "env_msg_hm3d"
+    ],
+    "note": "本表给出本分支已报告的最优主结果。MSGNav的OVON补充材料在阅读笔记中转引Seen=48.3/27.0，本次未重新获取补充PDF，因此不以该转引值参与新表排名。不能使用旧arXiv版的HM3D-OVON结果替换CVPR版结果。",
+    "slide": 10
+  },
+  {
+    "id": "4fk5dq",
+    "records": [
+      "env_soft_goat_S",
+      "env_soft_goat_Y",
+      "env_soft_goat_U",
+      "env_msg_goat",
+      "env_soft_sg3d"
+    ],
+    "note": "",
+    "slide": 11
+  },
+  {
+    "id": "4akapc",
+    "records": [
+      "mem_astra_ovon_U",
+      "mem_astra_goat_U",
+      "mem_janus_r2r",
+      "mem_janus_rxr"
+    ],
+    "note": "AstraNav GOAT的1 m判据与SoftNav/MSGNav的0.25 m不同，不应跨分支直接比较成功率。Janus采用主表R2R SPL=56.8，附录同配置写56.6，不自行统一。",
+    "slide": 14
+  },
+  {
+    "id": "soqhlk",
+    "records": [
+      "mem_astra_ovon_S",
+      "mem_astra_ovon_Y",
+      "mem_astra_ovon_U",
+      "mem_astra_goat_S",
+      "mem_astra_goat_Y",
+      "mem_astra_goat_U",
+      "mem_janus_r2r",
+      "mem_janus_rxr"
+    ],
+    "note": "JanusVLN附录Table 6的OVON SR/SPL=44.9/31.7，仅作补充。AstraNav全部六个划分结果已列出，Janus只有OVON Val-Unseen、R2R/RxR Val-Unseen报告，不能补填未报告划分。",
+    "slide": 15
+  },
+  {
+    "id": "soqhlk",
+    "records": [
+      "mem_janus_ovon"
+    ],
+    "note": "",
+    "slide": 15
+  },
+  {
+    "id": "r5iojy",
+    "records": [
+      "exp_vlfm_gibson",
+      "exp_open_hm3d",
+      "exp_open_mp3d",
+      "exp_vlfm_ovon_S",
+      "exp_vlfm_ovon_Y",
+      "exp_open_ovon"
+    ],
+    "note": "OpenFrontier在同一张表中列出VLFM并在HM3D、MP3D与OVON Val-Unseen的SR/SPL均更高。Gibson及OVON Seen/Synonyms只有VLFM报告，不能将OpenFrontier未报告项记为零。",
+    "slide": 18
+  },
+  {
+    "id": "rmb92l",
+    "records": [
+      "train_ovseg_U",
+      "train_compass_ovon",
+      "train_compass_hm3d2",
+      "train_compass_mp3d",
+      "train_compass_iin",
+      "train_compass_procthor"
+    ],
+    "note": "不将OVSegDT的较高SR与CompassNav的较高SPL合成一行。CompassNav表1和表2中的HM3D版本未完整对应v1/v2，按原表标签分别保留，不把61.6当作56.6的同条件更新值。",
+    "slide": 21
+  },
+  {
+    "id": "bsaa9a",
+    "records": [
+      "train_ovseg_S",
+      "train_ovseg_Y",
+      "train_ovseg_U",
+      "train_compass_ovon",
+      "train_compass_hm3d1",
+      "train_compass_hm3d2",
+      "train_compass_mp3d",
+      "train_compass_iin",
+      "train_compass_procthor"
+    ],
+    "note": "",
+    "slide": 22
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "name": "package",
+    "exit_code": 0,
+    "stdout": "{\n  \"chart_count\": 0,\n  \"claim_boundary\": \"Structural package checks only; no slide text, notes, formulas, chart values, or native PowerPoint execution were inspected.\",\n  \"finding_count\": 0,\n  \"findings\": [],\n  \"notes_parts_skipped\": 34,\n  \"relationship_part_count\": 78,\n  \"slide_count\": 34,\n  \"status\": \"pass\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "name": "layout",
+    "exit_code": 0,
+    "stdout": "{\n  \"finding_count\": 0,\n  \"findings\": [],\n  \"font_policy\": {\n    \"checked_text_script_count\": 1008,\n    \"native_font_rendering_verified\": false,\n    \"observed_font_families\": [\n      \"Microsoft YaHei\"\n    ],\n    \"observed_font_use_counts\": {\n      \"Microsoft YaHei\": 1008\n    },\n    \"passed\": true,\n    \"performed\": true\n  },\n  \"slide_count\": 34,\n  \"slide_size_in\": [\n    13.3333,\n    7.5\n  ],\n  \"warning_count\": 0,\n  \"warnings\": []\n}\n",
+    "stderr": ""
+  },
+  {
+    "name": "table-arithmetic",
+    "exit_code": 0,
+    "stdout": "{\"checked_column_count\": 0, \"checks\": [], \"claim_boundary\": \"Displayed-value arithmetic with rounding tolerance; not source-data verification.\", \"eligible_table_count\": 0, \"finding_count\": 0, \"findings\": [], \"native_table_count\": 25, \"passed\": true, \"schema_version\": \"presentation-native-table-arithmetic.v1\", \"skipped_tables\": [{\"reason\": \"no_unambiguous_bottom_total\", \"slide\": 3, \"table\": 1}, {\"reason\": \"no_unambiguous_bottom_total\", \"slide\": 4, \"table\": 1}, {\"reason\": \"no_unambiguous_bottom_total\", \"slide\": 5, \"table\": 1}, {\"reason\": \"no_unambiguous_bottom_total\", \"slide\": 6, \"table\": 1}, {\"reason\": \"no_unambiguous_bottom_total\", \"slide\": 8, \"table\": 1}, {\"reason\": \"no_unambiguous_bottom_total\", \"slide\": 9, \"table\": 1}, {\"reason\": \"no_unambiguous_bottom_total\", \"slide\": 10, \"table\": 1}, {\"reason\": \"no_unambiguous_bottom_total\", \"slide\": 11, \"table\": 1}, {\"reason\": \"no_unambiguous_bottom_total\", \"slide\": 14, \"table\": 1}, {\"reason\": \"no_unambiguous_bottom_total\", \"slide\": 15, \"table\": 1}, {\"reason\": \"no_unambiguous_bottom_total\", \"slide\": 17, \"table\": 1}, {\"reason\": \"no_unambiguous_bottom_total\", \"slide\": 18, \"table\": 1}, {\"reason\": \"no_numeric_amounts\", \"slide\": 20, \"table\": 1}, {\"reason\": \"no_unambiguous_bottom_total\", \"slide\": 21, \"table\": 1}, {\"reason\": \"no_unambiguous_bottom_total\", \"slide\": 22, \"table\": 1}, {\"reason\": \"no_numeric_amounts\", \"slide\": 24, \"table\": 1}, {\"reason\": \"no_numeric_amounts\", \"slide\": 25, \"table\": 1}, {\"reason\": \"no_numeric_amounts\", \"slide\": 27, \"table\": 1}, {\"reason\": \"no_numeric_amounts\", \"slide\": 28, \"table\": 1}, {\"reason\": \"no_numeric_amounts\", \"slide\": 29, \"table\": 1}, {\"reason\": \"no_numeric_amounts\", \"slide\": 30, \"table\": 1}, {\"reason\": \"no_numeric_amounts\", \"slide\": 31, \"table\": 1}, {\"reason\": \"no_numeric_amounts\", \"slide\": 32, \"table\": 1}, {\"reason\": \"no_numeric_amounts\", \"slide\": 33, \"table\": 1}, {\"reason\": \"no_numeric_amounts\", \"slide\": 34, \"table\": 1}], \"slide_count\": 34, \"warning_count\": 0, \"warnings\": []}\n",
+    "stderr": ""
+  },
+  {
+    "name": "chart-titles",
+    "exit_code": 0,
+    "stdout": "{\"checks\":[],\"finding_count\":0,\"findings\":[],\"native_chart_count\":0,\"native_powerpoint_verified\":false,\"passed\":true,\"presentation_sha256\":\"bc73c0d0e400e194bccd96158e5a3f9b3cdfa4ecbc2f90aa9ea8c2584d6d4a7e\",\"schema_version\":\"presentation-native-chart-titles.v1\",\"slide_count\":34,\"source_text_emitted\":false,\"unresolved_linked_title_count\":0}\n",
+    "stderr": ""
+  },
+  {
+    "name": "quantitative-charts",
+    "exit_code": 0,
+    "stdout": "{\"chart_count\":0,\"chart_counts\":{},\"chart_owner_slide_parts\":{},\"chart_owner_slides\":[],\"package_sha256\":\"bc73c0d0e400e194bccd96158e5a3f9b3cdfa4ecbc2f90aa9ea8c2584d6d4a7e\",\"schema_version\":\"owner-private.actual-native-chart-discovery.v1\",\"slide_count\":34,\"source_attachments_accessed\":false,\"source_required_chart_owners_inferred\":false}\n",
+    "stderr": ""
+  },
+  {
+    "name": "nature-audit",
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  }
+]

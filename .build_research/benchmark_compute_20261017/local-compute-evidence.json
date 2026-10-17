@@ -1,0 +1,426 @@
+[
+  {
+    "source": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\00_数据集与任务基准\\2023_CVPR_HM3D_Semantics_ObjectNav.pdf",
+    "matches": [
+      {
+        "page": 2,
+        "blocks": [
+          "mapped to the 40 Matterport 3D categories [6]. On average, each scene consists of 661 objects from 106 categories. This dataset is the result of over 14,200 hours of human effort for annotation and verification by 20+ annotators. The follow￾ing subsections provide further details on asset formats, the annotation pipeline, and scene content statistics. 3.1. Data Format and Contents"
+        ]
+      }
+    ]
+  },
+  {
+    "source": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\00_数据集与任务基准\\2024_CVPR_GOAT_Bench.pdf",
+    "matches": [
+      {
+        "page": 13,
+        "blocks": [
+          "encoder [25]. We train the policy using RL with a navi￾gation reward to minimize the distance-to-target. We train the policy till convergence (300 million steps in our case) using 4xA40 GPUs with 32 environments on each GPU. We present results of the model checkpoint with the best average performance across all 3 evaluation splits of OVON HM3D dataset."
+        ]
+      },
+      {
+        "page": 14,
+        "blocks": [
+          "goal embedding gt. Similar to the ObjectNav policy, we train the policy till convergence (300 million steps in our case) using 4xA40 GPUs with 32 environments on each GPU and choose the checkpoint with the best average performance across all 3 evaluation splits. Instance ImageNav Policy. To encode the instance im￾age goal INSTANCE IMAGENAV we use frozen CroCo￾v2 [34] image encoder, pre-trained on the Cross-view com￾pletion task on a dataset of 3D scanned scene images from",
+          "we resize and center crop the input image to 112×112 during training. We train the policy till convergence (200 million steps in our case) using 4xA40 GPUs with 16 environments on each GPU. Similar to the ObjectNav and LanguageNav policies, we choose the checkpoint with the best average performance across all 3 evaluation splits of INSTANCE IM￾AGENAV dataset.",
+          "training. We train the policy till convergence (200 million steps in our case) using 4xA40 GPUs with 16 environments on each GPU. Similar to the ObjectNav and LanguageNav policies, we choose the checkpoint with the best average performance across all 3 evaluation splits of INSTANCE IM￾AGENAV dataset. The individual task performances are presented in Tab. 5.",
+          "in a single GOAT episode. We train the policy till convergence using VER [61] (for 500 million steps in our case) using 4xA40 GPUs with 32 environments on each GPU. We choose the checkpoint which has the best average performance across all 3 evaluation splits of the GOAT HM3D dataset.",
+          "the policy till convergence using VER [61] (for 500 million steps in our case) using 4xA40 GPUs with 32 environments on each GPU. We choose the checkpoint which has the best average performance across all 3 evaluation splits of the GOAT HM3D dataset."
+        ]
+      }
+    ]
+  },
+  {
+    "source": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\00_数据集与任务基准\\2024_IROS_HM3D_OVON.pdf",
+    "matches": [
+      {
+        "page": 4,
+        "blocks": [
+          "reduce the speed of training. Existing implementations of frontier-based trajectory generation for ObjectNav [11], [28] are overly slow for in-the-loop execution, taking 250ms per time step, leading to a separation of trajectory generation and supervised learning into discrete stages to maintain training speed. This constraint has forced prior studies like"
+        ]
+      },
+      {
+        "page": 5,
+        "blocks": [
+          "Fig. 3: Examples of successes of our DAgRL policy for each evaluation split. DAgRL can efficiently explore the environment, avoid obstacles, and stop in front of the goal object when it is spotted, using only RGB observations. Videos can be found at naoki.io/ovon. an average of 1ms per time step to suggest the appropriate action for guiding the agent from its present position toward the next frontier (or the goal object, if close enough). This not only facilitates real-time generation of ground-truth expert",
+          "comparison with these two fine-tuned policies fair, the RL policy is trained for 300M steps. All policies were trained across 16 environments per GPU, distributed over 8 TITAN Xp GPUs utilizing Variable Experience Rollout [39]. V. RESULTS In this section, we aim to address the following questions:",
+          "policy is trained for 300M steps. All policies were trained across 16 environments per GPU, distributed over 8 TITAN Xp GPUs utilizing Variable Experience Rollout [39]. V. RESULTS In this section, we aim to address the following questions: 1) What differences in performance can be observed be￾tween policies trained using different learning methods"
+        ]
+      }
+    ]
+  },
+  {
+    "source": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\00_数据集与任务基准\\2024_SG3D_Sequential_Grounding_and_Navigation.pdf",
+    "matches": [
+      {
+        "page": 16,
+        "blocks": [
+          "AdamW optimizer with a learning rate of 1e-4, β1 = 0.9, β2 = 0.999, and a weight decay of 0.05. For 3D-VG models, we use a batch size of 32; for SG-LLM, the batch size is re￾duced to 16 due to GPU memory constraints. We use LoRA tuning [33] for the parameters of the LLM in SG-LLM with a rank of 16. We train the end-to-end navigation policy for 70M steps until convergence."
+        ]
+      }
+    ]
+  },
+  {
+    "source": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\01_模仿学习与强化学习导航\\2026_CVPR_OVSegDT.pdf",
+    "matches": [
+      {
+        "page": 6,
+        "blocks": [
+          "segmentation for 200M steps, as incremental improvements diminished beyond this point. We perform additional fine￾tuning on the predicted segmentation for 15M steps. All experiments were conducted across 40 environments dis￾tributed across 2 NVIDIA A100 GPUs utilizing Variable Experience Rollout [32]. We provide the list of used hyper￾parameters and navigation reward details in the Sup. Mat. (Sec. A). Experimental setup. We evaluate the effectiveness of"
+        ]
+      },
+      {
+        "page": 8,
+        "blocks": [
+          "source SR↑ SPL↑ Collisions↓ Inference time (msec, NVIDIA Jetson Orin) ✗ GT 69.3 ± 0.2 39.1 ± 0.2 23.3 ± 0.3 107 ± 5 ✗ YOLOE 28.8 ± 0.4 14.0 ± 0.2 19.6 ± 0.2 132 ± 5 ✗ YOLOE+calib. 35.6 ± 0.4 16.2 ± 0.3 20.2 ± 0.8 132 ± 5",
+          "our method OVSegDT achieves a gain of +26.4% in SR, +12.7% in SPL, and a 10% reduction in the average num￾ber of collisions compared to the baseline approach DagRL on the val unseen split of HM3D-OVON. Predicted segmen￾tation increases inference time on the NVIDIA Jetson Orin by only 23%, keeping OVSegDT suitable for real-time on￾board policy prediction. Sec. J in the Sup. Mat. shows demonstration experiments of OVSegDT on a real robot. We analyze how predicted segmentation affects naviga￾tion error profiles in Tab. 5. Most errors stem from goal"
+        ]
+      },
+      {
+        "page": 9,
+        "blocks": [
+          "error and navigation quality. • Sec. I reports performance metrics, including inference speed and GPU memory usage. • Sec. J presents results and insights from real-world robot experiments. • Sec. K provides an extended overview of related work on"
+        ]
+      },
+      {
+        "page": 17,
+        "blocks": [
+          "in the YOLOE model during the navigation process. I. Performance Analysis Table J. Analysis of GPU memory usage and inference time of OVSegDT with predicted segmentation. Segmentation source GT YOLOE GPU Memory Usage (Gb) 3486 4992",
+          "OVSegDT with predicted segmentation. Segmentation source GT YOLOE GPU Memory Usage (Gb) 3486 4992 Inference time (ms, NVIDIA H100) 13.6 ± 0.9 65.0 ± 14 Inference time (ms, NVIDIA Jetson Orin) 107 ± 5 132 ± 5 The performance analysis demonstrates that OVSegDT",
+          "Segmentation source GT YOLOE GPU Memory Usage (Gb) 3486 4992 Inference time (ms, NVIDIA H100) 13.6 ± 0.9 65.0 ± 14 Inference time (ms, NVIDIA Jetson Orin) 107 ± 5 132 ± 5 The performance analysis demonstrates that OVSegDT remains efficient across both ground-truth (GT) and pre￾dicted segmentation settings (see Tab. J). While the use",
+          "GPU Memory Usage (Gb) 3486 4992 Inference time (ms, NVIDIA H100) 13.6 ± 0.9 65.0 ± 14 Inference time (ms, NVIDIA Jetson Orin) 107 ± 5 132 ± 5 The performance analysis demonstrates that OVSegDT remains efficient across both ground-truth (GT) and pre￾dicted segmentation settings (see Tab. J). While the use of YOLOE-based predicted segmentation increases GPU",
+          "The performance analysis demonstrates that OVSegDT remains efficient across both ground-truth (GT) and pre￾dicted segmentation settings (see Tab. J). While the use of YOLOE-based predicted segmentation increases GPU memory usage (from 3486 Gb to 4992 Gb) and inference la￾tency on the NVIDIA H100 (from 13.6±0.9 ms to 65.0±14 ms), the impact on the embedded NVIDIA Jetson Orin plat￾form is relatively modest (from 107 ± 5 ms to 132 ± 5 ms). This indicates that incorporating predicted segmen￾tation does not significantly slow down the model in on￾board scenarios, which are critical for deployment. Overall,",
+          "remains efficient across both ground-truth (GT) and pre￾dicted segmentation settings (see Tab. J). While the use of YOLOE-based predicted segmentation increases GPU memory usage (from 3486 Gb to 4992 Gb) and inference la￾tency on the NVIDIA H100 (from 13.6±0.9 ms to 65.0±14 ms), the impact on the embedded NVIDIA Jetson Orin plat￾form is relatively modest (from 107 ± 5 ms to 132 ± 5 ms). This indicates that incorporating predicted segmen￾tation does not significantly slow down the model in on￾board scenarios, which are critical for deployment. Overall, OVSegDT demonstrates strong efficiency in terms of GPU",
+          "of YOLOE-based predicted segmentation increases GPU memory usage (from 3486 Gb to 4992 Gb) and inference la￾tency on the NVIDIA H100 (from 13.6±0.9 ms to 65.0±14 ms), the impact on the embedded NVIDIA Jetson Orin plat￾form is relatively modest (from 107 ± 5 ms to 132 ± 5 ms). This indicates that incorporating predicted segmen￾tation does not significantly slow down the model in on￾board scenarios, which are critical for deployment. Overall, OVSegDT demonstrates strong efficiency in terms of GPU memory usage and maintains near real-time inference per￾formance, making it suitable for real-time navigation policy",
+          "ms), the impact on the embedded NVIDIA Jetson Orin plat￾form is relatively modest (from 107 ± 5 ms to 132 ± 5 ms). This indicates that incorporating predicted segmen￾tation does not significantly slow down the model in on￾board scenarios, which are critical for deployment. Overall, OVSegDT demonstrates strong efficiency in terms of GPU memory usage and maintains near real-time inference per￾formance, making it suitable for real-time navigation policy prediction even when relying on predicted segmentation in￾puts. J. Real-World Robot Experiments",
+          "We conduct demonstration experiments on a real iRobot Create 3 robot equipped with a ZED X camera, Livox MID 360 LiDAR, and an Nvidia Jetson Orin PC. Since the ZED X has a wide FoV (105°vs. 42°in the HM3D-OVON bench￾mark), we train a version of OVSegDT with this camera setup to improve the estimation of distances to objects and obstacles during real-robot experiments. Fig. L demon￾strates the effectiveness of the OVSegDT strategy for open￾vocabulary navigation in two scenarios."
+        ]
+      },
+      {
+        "page": 18,
+        "blocks": [
+          "ZedX Livox MID 360 start point end point NVIDIA Jetson Orin Figure L. Left: iRobot Create 3 equipped with a ZED X camera, Livox MID 360 LiDAR, and Nvidia Jetson Orin PC. Right: demonstration of the robot’s trajectories on the occupancy grid for two scenarios. In the first scenario, the robot must sequentially reach each of two goals specified in natural language. In the second scenario, the robot must find a target object that is outside its field of view while avoiding",
+          "ZedX Livox MID 360 start point end point NVIDIA Jetson Orin Figure L. Left: iRobot Create 3 equipped with a ZED X camera, Livox MID 360 LiDAR, and Nvidia Jetson Orin PC. Right: demonstration of the robot’s trajectories on the occupancy grid for two scenarios. In the first scenario, the robot must sequentially reach each of two goals specified in natural language. In the second scenario, the robot must find a target object that is outside its field of view while avoiding obstacles."
+        ]
+      }
+    ]
+  },
+  {
+    "source": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\02_语义地图与前沿探索\\2026_RSS_OpenFrontier.pdf",
+    "matches": [
+      {
+        "page": 5,
+        "blocks": [
+          "parameters across all benchmarks. Empirically, we run frontier detection and reasoning every six steps. All experiments are conducted on a machine equipped with a single RTX 4090 GPU (24GB). Details about parameter settings can be found in the Appendix. B. ObjectNav Benchmark Evaluation",
+          "detection and reasoning every six steps. All experiments are conducted on a machine equipped with a single RTX 4090 GPU (24GB). Details about parameter settings can be found in the Appendix. B. ObjectNav Benchmark Evaluation OpenFrontier achieves competitive performance across all"
+        ]
+      }
+    ]
+  },
+  {
+    "source": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\02_语义地图与前沿探索\\VLFM_Vision-Language_Frontier_Maps_for_Zero-Shot_Semantic_Navigation.pdf",
+    "matches": [
+      {
+        "page": 4,
+        "blocks": [
+          "using scenes from the training split of the HM3D dataset [8], using the same hyperparameters as those described in [9], with 4 GPUs (64 workers each), and train the policy for 2.5 billion steps (around 7 days). PointNav does not necessitate a semantic understanding of the environment, can be accom￾plished using only geometric understandings, and transfers well to the real-world using only onboard sensors [33]–[36].",
+          "using the same hyperparameters as those described in [9], with 4 GPUs (64 workers each), and train the policy for 2.5 billion steps (around 7 days). PointNav does not necessitate a semantic understanding of the environment, can be accom￾plished using only geometric understandings, and transfers well to the real-world using only onboard sensors [33]–[36]. Our PointNav policy exclusively uses the egocentric depth"
+        ]
+      },
+      {
+        "page": 6,
+        "blocks": [
+          "used, including BLIP-2, GroundingDINO, MobileSAM, and ZoeDepth, were loaded and executed in real-time on a laptop equipped with an RTX 4090 MaxQ Mobile GPU with 16 GB of VRAM. Videos can be viewed at naoki.io/vlfm. VII. CONCLUSION This paper presents VLFM, a zero-shot framework for"
+        ]
+      }
+    ]
+  },
+  {
+    "source": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\03_大模型规划与工具调用\\2025_CVPR_TANGO.pdf",
+    "matches": []
+  },
+  {
+    "source": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\03_大模型规划与工具调用\\SuperNav.pdf",
+    "matches": [
+      {
+        "page": 3,
+        "blocks": [
+          "language priors, or image–text relevance. VoroNav (Wu et al., 2024) and SG-Nav (Yin et al., 2024) add topological or scene-graph context, while ApexNav (Zhang et al., 2025) combines adaptive ex￾ploration with multi-frame target identification. These systems assign models specific roles within task-oriented pipelines; SuperNav instead lets the MLLM select and coordinate available capabili￾ties at runtime. Hierarchical Navigation Systems. Hierarchical systems couple high-level model reasoning with dedicated navigation modules. InstructNav (Long et al., 2024) translates predicted actions and landmarks into trajectories through value maps; OmniNav (Xue et al., 2026) combines prospec￾tive exploration and subgoal planning with a fast waypoint policy; SysNav (Zhu et al., 2026) dele￾gates within-room exploration and motion to classical algorithms under room-level VLM reasoning.",
+          "dedicated navigation modules. InstructNav (Long et al., 2024) translates predicted actions and landmarks into trajectories through value maps; OmniNav (Xue et al., 2026) combines prospec￾tive exploration and subgoal planning with a fast waypoint policy; SysNav (Zhu et al., 2026) dele￾gates within-room exploration and motion to classical algorithms under room-level VLM reasoning. These systems already support online adaptation, demonstrating cooperation between model rea￾soning and learned or geometric execution. SuperNav focuses on the interfaces and runtime through which the model chooses and combines capabilities across a task. Agentic Systems and Harnesses. Agentic systems organize execution through callable capabili￾ties and feedback. Inner Monologue (Huang et al., 2022) incorporates environmental feedback into planning, Code as Policies (Liang et al., 2023) composes robotics APIs into executable policies, and"
+        ]
+      },
+      {
+        "page": 5,
+        "blocks": [
+          "that the session ended, not that the task succeeded. Benchmark scoring evaluates success separately from this declaration. The loop therefore depends on operations that expose observations, execute motion, and maintain state, whose interfaces we describe next; runtime restrictions and execution limits appear in Appendix A. 3.2 AGENT-ORIENTED NAVIGATION TOOLS Tool suite and design principles. Agent-oriented Tools connect the MLLM’s navigation deci￾sions to executable environment operations. The suite covers initialization, observation, turning,"
+        ]
+      },
+      {
+        "page": 9,
+        "blocks": [
+          "Limitations. SuperNav relies on the underlying MLLM for semantic judgments and is therefore limited by its capabilities. Geometric execution relies on available maps or scene geometry, while MLLM inference incurs computational cost and substantial latency variability, making task duration less predictable. Our demand-driven evaluation measures ordered navigation to relevant targets rather than completion of the underlying activities. Extending evaluation to more real-world settings and improving reliability on long navigation sequences remain future directions."
+        ]
+      },
+      {
+        "page": 12,
+        "blocks": [
+          "surface and an approach position. A voxel-grid mapper accumulates LiDAR observations into a height-based 2D traversal-cost map; voxel size and grid resolution both default to 0.05 m. ReplanningAStarPlanner computes paths, and a lookahead-based follower uses proportional head￾ing control to generate linear and angular velocity commands at 10 Hz. Localization uses the robot’s reported odometry, without an additional loop-closing SLAM system in our software. Simulation and Geo-based Executor. Habitat-Sim provides RGB-D images at 640 × 480 reso￾lution, a 90◦ horizontal field of view, and a camera height of 1.25 m, together with known intrinsics and simulator camera poses. Geo-based Executor back-projects image-space anchors using ren￾dered depth and checks nearby candidate destinations on the scene’s precomputed navigation mesh."
+        ]
+      },
+      {
+        "page": 13,
+        "blocks": [
+          "action head, as described in Section C. Simulator position changes and collision reports support progress monitoring. A.2 RUNTIME AND TOOL ACCESS Agent runtime. We implement the Agent loop with Codex CLI and expose environment opera￾tions through the Model Context Protocol (MCP). Task workspaces and permissions. For Learned Executor and Geo-based Executor, the har￾ness launches each non-interactive Codex process with a task-specific working directory and CODEX HOME, containing its configuration, Skill snapshot, and logs. Native Skill loading re￾quires filesystem reads; execution uses danger-full-access with interactive approval disabled. Direc￾tories organize task state and artifacts without operating-system-level isolation. Instructions permit",
+          "progress monitoring. A.2 RUNTIME AND TOOL ACCESS Agent runtime. We implement the Agent loop with Codex CLI and expose environment opera￾tions through the Model Context Protocol (MCP). Task workspaces and permissions. For Learned Executor and Geo-based Executor, the har￾ness launches each non-interactive Codex process with a task-specific working directory and CODEX HOME, containing its configuration, Skill snapshot, and logs. Native Skill loading re￾quires filesystem reads; execution uses danger-full-access with interactive approval disabled. Direc￾tories organize task state and artifacts without operating-system-level isolation. Instructions permit read-only access to the prescribed Skill bundle but require scene perception and action through MCP"
+        ]
+      },
+      {
+        "page": 15,
+        "blocks": [
+          "B.4 OBSERVATION INTERFACES AND BASELINE EXECUTION The baseline configurations preserve model-specific inputs rather than imposing a shared camera interface (Table 5). NaVid uses the navid-7b-full-224-video-fps-1-grid-2-r2r-rxr-training-split checkpoint, and UniNaVid uses uninavid-7b-full-224-video-fps-1-grid-2. StreamVLN uses its local checkpoint and native adapter. OmniNav uses the chongchongjj/OmniNav fast-system checkpoint with its waypoint and arrival-prediction interface, including the required self-pose",
+          "The baseline configurations preserve model-specific inputs rather than imposing a shared camera interface (Table 5). NaVid uses the navid-7b-full-224-video-fps-1-grid-2-r2r-rxr-training-split checkpoint, and UniNaVid uses uninavid-7b-full-224-video-fps-1-grid-2. StreamVLN uses its local checkpoint and native adapter. OmniNav uses the chongchongjj/OmniNav fast-system checkpoint with its waypoint and arrival-prediction interface, including the required self-pose input. Its positive arrival prediction is converted to STOP; for the video-policy adapters, a"
+        ]
+      },
+      {
+        "page": 20,
+        "blocks": [
+          "visual backbone is fine-tuned jointly with the policy, and inference uses the averaged weights. C.3 CLOSED-LOOP MOTION EXECUTION Goal initialization and sequence sampling. For a new goal, the runtime saves the selected ref￾erence image and aligns the robot with that view’s capture direction; alignment observations can also enter the history. The current simulation configuration uses a camera height of 1.25 m. At each replanning call, sequence sampling starts with x1 ∼ N (0, I) and uses four Euler steps, xτ−1/4 = xτ −"
+        ]
+      }
+    ]
+  },
+  {
+    "source": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\04_三维空间表征与目标推理\\2025_ICCV_MTU3D_Move_to_Understand_a_3D_Scene.pdf",
+    "matches": [
+      {
+        "page": 6,
+        "blocks": [
+          "layers. Query proposal is trained in stage 1 then frozen, and spatial reasoning is trained in later stages. All training runs on four NVIDIA A100 GPUs around 164 GPU hours. For simulation evaluation, we follow [37, 79, 87] using Stretch embodiment (1.41m tall, 17cm base radius), pro￾cessing 360×640 RGB images It, depth maps Dt, and pose Pt with actions: MOVE FORWARD(0.25m), TURN LEFT,"
+        ]
+      },
+      {
+        "page": 7,
+        "blocks": [
+          "retain useful spatial information. Can MTU3D run in real time? Tab. 7 shows that our model achieves efficient query proposal (192 ms) and fast reasoning (31 ms) while maintaining a competitive FPS (3.4) with 266M parameters. These results highlight the model’s optimal balance between speed and performance,",
+          "Can MTU3D run in real time? Tab. 7 shows that our model achieves efficient query proposal (192 ms) and fast reasoning (31 ms) while maintaining a competitive FPS (3.4) with 266M parameters. These results highlight the model’s optimal balance between speed and performance, making it well-suited for real-time applications.",
+          "model’s optimal balance between speed and performance, making it well-suited for real-time applications. Query Proposal Spatial Reasoning FPS Params 192 ms 31 ms 3.4 266M Table 7. Model speed and parameter metrics, results are average from 5 runs across multiple frames and episodes on 3090 Ti.",
+          "making it well-suited for real-time applications. Query Proposal Spatial Reasoning FPS Params 192 ms 31 ms 3.4 266M Table 7. Model speed and parameter metrics, results are average from 5 runs across multiple frames and episodes on 3090 Ti. 4.4. Qualitative results"
+        ]
+      },
+      {
+        "page": 8,
+        "blocks": [
+          "Figure 5. Visualization of results in Habitat-Sim. 4.5. Real World Testing We evaluate MTU3D in realistic 3D environments by de￾ploying it on an NVIDIA Jetson Orin with a Kinect [86] for real-time RGB-D data and a mobile robot equipped with Lidar for exploration. Without any real-world fine-tuning, we test the model in three diverse scenes: home, corridor,"
+        ]
+      }
+    ]
+  },
+  {
+    "source": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\04_三维空间表征与目标推理\\2026_CVPR_D3D-VLP.pdf",
+    "matches": [
+      {
+        "page": 6,
+        "blocks": [
+          "candidates from panoramic patch tokens. Training. The model is trained using our Synergistic Learn￾ing from Fragmented Supervision (SLFS) strategy (cf . Sec￾tion 3.3) with our large-scale hybrid dataset of 10M samples in Table 1. The model is trained with the masked autore￾gressive cross-entropy loss for 100K episodes (∼14 days) on 4 RTX 6000 Ada GPUs with total batch size 8. Due to limited computational resources, we cannot use all avail￾able data for training. As shown in Table 1, we sample data of types 1, 2, and 3; types 4 and 5; and type 6 with",
+          "Training. The model is trained using our Synergistic Learn￾ing from Fragmented Supervision (SLFS) strategy (cf . Sec￾tion 3.3) with our large-scale hybrid dataset of 10M samples in Table 1. The model is trained with the masked autore￾gressive cross-entropy loss for 100K episodes (∼14 days) on 4 RTX 6000 Ada GPUs with total batch size 8. Due to limited computational resources, we cannot use all avail￾able data for training. As shown in Table 1, we sample data of types 1, 2, and 3; types 4 and 5; and type 6 with approximately a 1:1:1 probability during training. All sam￾ples within the same batch are kept consistent in terms of"
+        ]
+      }
+    ]
+  },
+  {
+    "source": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\04_三维空间表征与目标推理\\2026_CVPR_MSGNav.pdf",
+    "matches": [
+      {
+        "page": 8,
+        "blocks": [
+          "representations in embodied navigation. Limitations and future work. Despite these advantages of MSGNav, scene graph-based methods still face low in￾ference efficiency due to the latency of VFMs and VLMs, suggesting future work on faster graph construction and in￾ference for real-time deployment. Additionally, while the “last-mile” problem has been mitigated by the VVD mod￾ule, it is not fully resolved. Exploring reinforcement learn￾ing approaches, e.g. active perception, to further solve this challenge is also a way worthy of attention."
+        ]
+      }
+    ]
+  },
+  {
+    "source": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\04_三维空间表征与目标推理\\2607.14586v1.pdf",
+    "matches": [
+      {
+        "page": 4,
+        "blocks": [
+          "on 1,187 SFT samples with effective batch size 16 (batch 4 × accumulation 4), using AdamW with linear warmup (100 steps) and cosine decay on a single NVIDIA RTX 4090. PQ3D uses benchmark-specific stage-2 weights from MTU3D [6]; the navigation policy (MLP projector + LoRA) is trained once on OVON and shared across all benchmarks."
+        ]
+      },
+      {
+        "page": 6,
+        "blocks": [
+          "D. Analysis 1) Inference Efficiency: Each decision step takes ∼1 s on a single RTX 4090: PQ3D 3D perception (∼0.45 s) and VLM inference (∼0.49 s) account for nearly all computation, while the MLP projector adds only 0.07 ms. The VLM cost is inherent to all methods that employ language-model",
+          "on a single RTX 4090: PQ3D 3D perception (∼0.45 s) and VLM inference (∼0.49 s) account for nearly all computation, while the MLP projector adds only 0.07 ms. The VLM cost is inherent to all methods that employ language-model reasoning for navigation [8], [9]; the soft-token injection mechanism itself introduces no measurable overhead. The"
+        ]
+      },
+      {
+        "page": 8,
+        "blocks": [
+          "these representations encode task-general navigation seman￾tics. Future work includes validating with alternative 3D encoders, scaling the training set, and adopting more efficient architectures to reduce the current ∼1 s-per-step latency. REFERENCES [1] N. Yokoyama, R. Ramrakhya, A. Das, D. Batra, and S. Ha, “HM3D￾OVON: A dataset and benchmark for open-vocabulary object goal navigation,” in Proc. IROS, 2024."
+        ]
+      }
+    ]
+  },
+  {
+    "source": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\05_视觉语言动作决策与视频记忆\\2025_RSS_Uni-NaVid.pdf",
+    "matches": []
+  },
+  {
+    "source": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\05_视觉语言动作决策与视频记忆\\2026_CVPR_AstraNav-Memory.pdf",
+    "matches": [
+      {
+        "page": 3,
+        "blocks": [
+          "use memory stored outside the model and queried on de￾mand via retrieval-augmented pipelines and structured in￾dices. Foundational systems include RAG, REALM, kNN￾LM, and RETRO, along with long-document and struc￾tured variants such as LongRAG, RAPTOR, GraphRAG, and OS-style MemGPT [5, 15, 18, 21, 22, 24, 29, 34]. These methods offer interpretability and controllable ac￾cess but rely on chunking and indexing heuristics, are sen￾sitive to retriever recall and latency, and often fragment long-horizon temporal coherence, weakening coupling to closed-loop planning. The second category is implicit, token-integrated or parameterized memory. Memory is",
+          "2.2. Visual context compression and token efficiency Visual context compression seeks to reduce the number of visual tokens while preserving navigation-critical spa￾tial–semantic information, thereby enabling longer con￾texts, lower latency, and broader deployment. Recent efforts have converged around three methodological categories. 1. Pre-encoding and merging. PVC, VScan, and InternVL-X reduce tokens inside the vision stack via hierarchical ag￾gregation and global–local fusion, achieving sizable sav￾ings while retaining coarse layout [27, 51, 56]. However,"
+        ]
+      },
+      {
+        "page": 5,
+        "blocks": [
+          "subsets. For experiments with different numbers of in￾put images, we use the GOAT split whose history length (50/100/200/500 frames) matches the desired visual context length. Training is performed on 32 H20 GPUs with a learn￾ing rate of 1 × 10−5 , a warmup ratio of 0.05, and at most 2 epochs of optimization. We evaluate models using Success Rate (SR) and Success weighted by Path Length (SPL). A"
+        ]
+      },
+      {
+        "page": 7,
+        "blocks": [
+          "16 56.6 57.5 55.2 - 64 42.5 49.1 48.1 47.6 from 26.4 s to 6.5 s and almost halves GPU memory (90.6 GB → 46.8 GB), with a similar trend for inference time. In terms of accuracy, 50 (origin) still performs the best, indi￾cating that aggressive compression introduces a small per￾formance drop. Among the compressed variants, 100 (16×) > 200 (16×) > 50 (16×). We hypothesize that 100 (16×)",
+          "64 42.5 49.1 48.1 47.6 from 26.4 s to 6.5 s and almost halves GPU memory (90.6 GB → 46.8 GB), with a similar trend for inference time. In terms of accuracy, 50 (origin) still performs the best, indi￾cating that aggressive compression introduces a small per￾formance drop. Among the compressed variants, 100 (16×) > 200 (16×) > 50 (16×). We hypothesize that 100 (16×) offers the best balance between history length and context",
+          "of images is not simply proportional to the compression fac￾tor—for example, 1× with 50 images does not scale to 800 images at 16—because the DINOv3 ViT encoder must still keep its pre-compression tokens in memory, which domi￾nate GPU usage and limit the effective context length. Table 5. Success rate comparison of models on different naviga￾tion targets Category Model Original AstraNav-Momery"
+        ]
+      },
+      {
+        "page": 12,
+        "blocks": [
+          "interface that can handle a broader family of navigation tasks under the same image-centric memory backbone. An￾other important direction is end-to-end deployment on real robots. Our image-centric compression design enables low￾latency inference even under long visual contexts when per￾ception, memory, and control are integrated into a single on-device pipeline. 8108"
+        ]
+      }
+    ]
+  },
+  {
+    "source": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\05_视觉语言动作决策与视频记忆\\2026_ICLR_CompassNav.pdf",
+    "matches": [
+      {
+        "page": 3,
+        "blocks": [
+          "Conversely, present End-to-End approaches utilizing LVLMs aim to map observations directly to actions. Early attempts leveraged powerful closed-source models (e.g., GPT-4o) for zero-shot navi￾gation (Zhang et al., 2025a; Goetting et al., 2024). While demonstrating impressive reasoning, their prohibitive cost and latency render them impractical for real-time control. Alternatively, fine-tuning open-source LVLMs (e.g., Nav-R1 (Liu et al., 2025b)) has been hampered by a supervision granular￾ity mismatch. Existing datasets (e.g., R2R) provide only single ground-truth paths, forcing models into a rigid path imitation paradigm that lacks the counterfactual data essential for robust decision￾making. CompassNav overcomes these limitations by employing a novel training paradigm that distills robust spatial reasoning and decision-making capabilities directly into open-source LVLMs."
+        ]
+      },
+      {
+        "page": 21,
+        "blocks": [
+          "E MODEL AND TRAINING DETAILS E.1 TRAINING CONFIGURATIONS Supervised Fine-Tuning (SFT) Details We conduct the Supervised Fine-Tuning (SFT) stage us￾ing the LLaMA-Factory framework. The training process was performed on 8 A800 GPUs and took approximately 12 hours to complete. The key configurations and hyperparameters are summarized below.We initialize our model from the Qwen2.5-VL-7B-Instruct checkpoint. The task is set up as a standard supervised fine-tuning problem, with a maximum sequence length (cutoff_len)",
+          "E.1 TRAINING CONFIGURATIONS Supervised Fine-Tuning (SFT) Details We conduct the Supervised Fine-Tuning (SFT) stage us￾ing the LLaMA-Factory framework. The training process was performed on 8 A800 GPUs and took approximately 12 hours to complete. The key configurations and hyperparameters are summarized below.We initialize our model from the Qwen2.5-VL-7B-Instruct checkpoint. The task is set up as a standard supervised fine-tuning problem, with a maximum sequence length (cutoff_len) of 4096 tokens.",
+          "alpha (lora_alpha) of 128, and a dropout rate of 0.05. Training and Optimization. The model is trained for 3 epochs with a global batch size of 128 (8 GPUs × 8 per_device_batch_size × 2 gradient_accumulation_steps). We use the AdamW optimizer with a cosine learning rate scheduler, starting with a learning rate of 2×10−4 and a weight decay of 0.01. The warmup ratio is set to 0.03 of the total training steps. For efficiency, we utilize DeepSpeed",
+          "Reinforcement Fine-Tuning (RFT) Details We conduct the Reinforcement Fine-Tuning (RFT) stage using EasyR1, a simplified version of the Verl framework. The training was performed on 8 NVIDIA H200 GPUs, with each model being trained for approximately 170 steps. Due to the computational demands of the rollout process, each training step took about 20 minutes.The actor model was initialized from the LoRA weights obtained during the SFT stage. We use the GRPO (adv_estimator:grpo) algorithm for policy optimization. A KL penalty (kl_coef) of 1 ×"
+        ]
+      },
+      {
+        "page": 23,
+        "blocks": [
+          "Our 7B model is computationally intensive, so our real-world deployment used a three-part system. This setup consisted of the ROSMASTER X3 robot, a local computer that acted as a relay, and a remote server with an NVIDIA H200 GPU to run the CompassNav model. All three devices communicated over the same Local Area Network (LAN). The process worked in a continuous loop: the robot sent its current camera view to the local computer, which combined the image with the task instruction (e.g., \"find the trash can\") and forwarded the pair to the server. On the server, our"
+        ]
+      }
+    ]
+  },
+  {
+    "source": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\05_视觉语言动作决策与视频记忆\\2026_ICLR_OmniNav.pdf",
+    "matches": [
+      {
+        "page": 1,
+        "blocks": [
+          "a unified solution across heterogeneous navigation paradigms, often yielding low success rates and limited generalization. We present OmniNav, a unified frame￾work that handles instruct-goal, object-goal, point-goal navigation, and frontier￾based exploration within a single architecture. First, we introduce a lightweight, low-latency policy that predicts continuous-space waypoints (coordinates and ori￾entations) with high accuracy, outperforming action-chunk methods in precision and supporting real-world deployment with control frequencies up to 5 Hz. Sec￾ond, at the architectural level, OmniNav proposes a fast-slow system design: a fast module performs waypoint generation from relatively short-horizon visual context and subtasks, while a slow module conducts deliberative planning us￾ing long-horizon observations and candidate frontiers to select the next subgoal",
+          "success rates and limited generalization. We present OmniNav, a unified frame￾work that handles instruct-goal, object-goal, point-goal navigation, and frontier￾based exploration within a single architecture. First, we introduce a lightweight, low-latency policy that predicts continuous-space waypoints (coordinates and ori￾entations) with high accuracy, outperforming action-chunk methods in precision and supporting real-world deployment with control frequencies up to 5 Hz. Sec￾ond, at the architectural level, OmniNav proposes a fast-slow system design: a fast module performs waypoint generation from relatively short-horizon visual context and subtasks, while a slow module conducts deliberative planning us￾ing long-horizon observations and candidate frontiers to select the next subgoal and subtask. This collaboration improves path efficiency and maintains trajec￾tory coherence in exploration and memory-intensive settings. Notably, we find",
+          "intelligence: enabling robots to perceive, understand, and explore real-world environments with￾out pre-built maps while following natural language instructions. To act reliably in dynamic, par￾tially observable environments, an agent must not only ground instantaneous visual inputs but also maintain coherent spatiotemporal memory and perform active exploration. Application demands for real-time responsiveness further increase the requirements for low-latency decision-making and cross-environment generalization. Current research largely revolves around three paradigms: point-goal (Liu et al., 2025b), instruct￾goal (Anderson et al., 2018; Ku et al., 2020), and object-goal (Yokoyama et al., 2024b; Xiang et al., *Equal contribution"
+        ]
+      },
+      {
+        "page": 2,
+        "blocks": [
+          "recent Video-LLMs (Wei et al., 2025; Qi et al., 2025; Zhang et al., 2024b) and VLAs (Sapkota et al., 2025; Zitkovich et al., 2023; Ma et al., 2024) integrate vision, language, and action predic￾tion end to end, they still face bottlenecks in streaming video input, long-context management, and low-latency inference: discretized action modeling sacrifices precision and flexibility; constrained LLM call frequency and frequent context resets lead to deployment difficulties; besides, in practice, the dominant failure mode often stems from inadequate understanding of generic instructions and open-vocabulary objects rather than policy learning itself. These gaps call for a unified, efficient",
+          "We present OmniNav, a unified embodied navigation framework that concurrently covers instruct￾goal, object-goal, point-goal, and frontier-based exploration within a single architecture. Inspired by dual-system theory (Figure, 2024; Black et al., 2025), OmniNav coordinates a fast–slow sys￾tem (Black et al., 2025): a fast system reacts to comparatively short-horizon perception and current tasks or subtasks, generating high-precision waypoints (coordinates and orientations) to support low￾latency control up to 5 Hz; a slow system deliberates over long-horizon observations and frontier cues, leveraging a VLM’s chain-of-thought (Wei et al., 2022; Chen et al., 2025c; Liu et al., 2025a) to decompose complex goals and select the next subgoal and subtask. The two are coupled through a central memory module that uses a key–value (KV) cache to provide essential spatiotemporal",
+          "• A unified architecture that, under a single training framework and policy, supports multiple goal modalities (point, object, and instruction) as well as frontier-based exploration; • An end-to-end fast–slow coordination with central memory that reconciles low-latency control and high-level deliberation; • A principled strategy to incorporate generic vision–language data into joint training, sys￾tematically improving cross-task and cross-environment generalization. Extensive experiments set new state-of-the-art results across multiple navigation benchmarks, with"
+        ]
+      },
+      {
+        "page": 3,
+        "blocks": [
+          "coordinates, and visual history are converted into a set of discrete tokens consumable by a Large￾Language Model (LLM) see Fig. 1. We use Qwen2.5-VL-3B-Instruct (Bai et al., 2025) as the base model and extend it with a coordinate modality. During streaming inference, a key–value (KV) cache is maintained to reduce latency. Text tokens: Derived from natural-language task descriptions, object category labels, and point-goal commands, are all converted into a standardized instruction sequence. Coordinate tokens: Candidate search regions are represented as sets of 2D coordinates and heading angles, sourced from point-goal inputs or subgoal positions generated by the slow system."
+        ]
+      },
+      {
+        "page": 4,
+        "blocks": [
+          "leading to robust instruction following. Compared with conventional autoregressive methods, the policy head achieves an speedup and, with a history of 20 frames, supports an inference rate of 5 Hz for real-time closed-loop control. At the same time, it produces smoother and more precise trajectories. We employ a variant of the Denoising Transformer (DiT) (Peebles & Xie, 2023) to model waypoint sequences. The policy network consists of self-attention blocks that operate on noised tokens to"
+        ]
+      },
+      {
+        "page": 8,
+        "blocks": [
+          "A joint training scheme is particularly critical for Vision-and-Language Navigation (VLN), which requires strong general knowledge and semantic understanding, leading to substantial improvements in success rates in open environments. Stage 1 is trained with 96 NVIDIA H20 GPUs for 120 hours, and Stage 2 is trained with 64 NVIDIA H20 GPUs for 48 hours with lower learning rate. 5 EXPERIMENTS Table 1: Main comparison with prior methods on the Val-Unseen split of R2R-CE and RxR-CE.",
+          "requires strong general knowledge and semantic understanding, leading to substantial improvements in success rates in open environments. Stage 1 is trained with 96 NVIDIA H20 GPUs for 120 hours, and Stage 2 is trained with 64 NVIDIA H20 GPUs for 48 hours with lower learning rate. 5 EXPERIMENTS Table 1: Main comparison with prior methods on the Val-Unseen split of R2R-CE and RxR-CE. Method Observation R2R-CE Val-Unseen RxR-CE Val-Unseen"
+        ]
+      },
+      {
+        "page": 9,
+        "blocks": [
+          "system transparent, enabling process-level self-check and correction. It reduces cumulative errors in long chains and complex semantic tasks, producing stable improvements. When all four are en￾abled, performance is best: the slow system provides semantically plausible long-horizon subgoals; the policy head executes with high precision and low latency; general data injects commonsense and language–vision alignment; and CoT provides auditable processes and self-correction. Table 3: Ablation study on HM3D-OVON Val-Unseen Method Module Val-Unseen",
+          "✓ ✓ ✓ ✓ 59.2 33.2 Real-world deployment In real-robot deployment see Fig. 4, we deploy the fast system component of the model architecture—comprising the VLM and the policy head on a cloud server with an RTX 3090 GPU. The history buffer holds up to 20 front-view frames with at a resolution of 120×106, while the current input is tri-view at 480×426. The system runs at over 5 Hz. For all tasks, it outputs waypoints, which are then fed into the onboard speed control module, which, based on the current",
+          "Real-world deployment In real-robot deployment see Fig. 4, we deploy the fast system component of the model architecture—comprising the VLM and the policy head on a cloud server with an RTX 3090 GPU. The history buffer holds up to 20 front-view frames with at a resolution of 120×106, while the current input is tri-view at 480×426. The system runs at over 5 Hz. For all tasks, it outputs waypoints, which are then fed into the onboard speed control module, which, based on the current speed and maximum acceleration, generates a set of candidate speeds. It then selects the optimal",
+          "of the model architecture—comprising the VLM and the policy head on a cloud server with an RTX 3090 GPU. The history buffer holds up to 20 front-view frames with at a resolution of 120×106, while the current input is tri-view at 480×426. The system runs at over 5 Hz. For all tasks, it outputs waypoints, which are then fed into the onboard speed control module, which, based on the current speed and maximum acceleration, generates a set of candidate speeds. It then selects the optimal speed to approach the waypoint (selection criteria: minimize speed changes to maintain high speed"
+        ]
+      },
+      {
+        "page": 10,
+        "blocks": [
+          "Published as a conference paper at ICLR 2026 performance under real-world constraints (including detailed latency–frequency trade-off analysis), constitutes an important avenue for future research. Figure 4: Real-world deployment. It shows third-person view of the three different navigation tasks which are deployed in a zero-shot setting. The gradient blue arrows indicate the trajectory,",
+          "performance on the real quadruped robot. 6 CONCLUSION & FUTURE WORKS Conclusion The core of OmniNav is a fast–slow dual-system architecture: the fast system, condi￾tioned on VLM-fused multimodal context, employs a flow-matching policy to generate future con￾tinuous waypoints, achieving low latency, and high-precision closed-loop control; the slow system plans subgoals and subtasks supported by long-horizon visual memory and frontiers, and introduces explicit CoT for interpretability and self-correction. This architecture supports most basic tasks in embodied navigation. Through unified multimodal tokenization, different tasks (instruct goal, ob￾ject goal, point goal) are seamlessly handled within a single model. On the training side, we adopt a",
+          "OmniNav improves success rates over the current best on R2R-CE and on RxR-CE, achieves the best performance on OVON, and benefits further from the slow-system design. Real-world quadruped robot deployment demonstrates the engineering feasibility of up to 5 Hz cloud inference with tri￾view inputs and a 20-frame history buffer. Overall, the high spatial precision and low latency of continuous waypoints, the unified multimodal interface, the fast–slow system collaboration, and joint training collectively underpin OmniNav’s strong performance across benchmarks, evidencing solid open-set generalization and practical deployment potential."
+        ]
+      }
+    ]
+  },
+  {
+    "source": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\05_视觉语言动作决策与视频记忆\\ICLR-2026-janusvln-decoupling-semantics-and-spatiality-with-dual-implicit-memory-for-vision-language-navigation-Paper-Conference.pdf",
+    "matches": [
+      {
+        "page": 6,
+        "blocks": [
+          "Published as a conference paper at ICLR 2026 As shown in Figure 3, VGGT’s inference time grows exponentially with each new frame due to its need to reprocess the entire sequence, resulting in an out-of-memory error on 48G GPU with only 48 frames. In contrast, our approach avoids reprocessing historical frames, causing its inference time to increase only marginally and thereby demonstrating excellent efficiency. For both the semantic encoder and the LLM, namely Qwen2.5-VL, we employ standard KV Cache"
+        ]
+      },
+      {
+        "page": 7,
+        "blocks": [
+          "Real-world evaluation setup. In real-world experiments, we use the Unitree Go2 as the robotic platform, equipped with an Insta360 X5 camera to capture front RGB. JanusVLN runs on a remote server with an A10 GPU to continuously process RGB and instructions, returning the inference re￾sults to the robot for action execution. We focus on navigation tasks requiring spatial understanding. Implementation details. We constructed JanusVLN based on Qwen2.5-VL 7B (Bai et al., 2025) and VGGT Wang et al. (2025a). The model is trained for one epoch, during which we exclusively fine-tune the LLM and the projection layer with learning rates of 2e-5 and 1e-5, respectively, while"
+        ]
+      },
+      {
+        "page": 9,
+        "blocks": [
+          "lengths between cached memory and VGGT for the online setting. Memory Size Inference Time NEÓ OSÒ SRÒ SPLÒ VGGT (8) 268 ms 5.99 56.2 50.2 45.0 VGGT (32) 1549 ms 5.66 56.8 51.2 47.6 Cached Memory (8) 82 ms 5.91 56.0 50.5 45.7 Cached Memory (32) 149 ms 5.52 57.1 51.7 48.3",
+          "Memory Size Inference Time NEÓ OSÒ SRÒ SPLÒ VGGT (8) 268 ms 5.99 56.2 50.2 45.0 VGGT (32) 1549 ms 5.66 56.8 51.2 47.6 Cached Memory (8) 82 ms 5.91 56.0 50.5 45.7 Cached Memory (32) 149 ms 5.52 57.1 51.7 48.3 Cached Memory (48) 195 ms 5.17 58.0 52.8 49.2",
+          "VGGT (8) 268 ms 5.99 56.2 50.2 45.0 VGGT (32) 1549 ms 5.66 56.8 51.2 47.6 Cached Memory (8) 82 ms 5.91 56.0 50.5 45.7 Cached Memory (32) 149 ms 5.52 57.1 51.7 48.3 Cached Memory (48) 195 ms 5.17 58.0 52.8 49.2 Cached Memory (64) 244 ms 5.27 57.5 52.3 49.4",
+          "VGGT (32) 1549 ms 5.66 56.8 51.2 47.6 Cached Memory (8) 82 ms 5.91 56.0 50.5 45.7 Cached Memory (32) 149 ms 5.52 57.1 51.7 48.3 Cached Memory (48) 195 ms 5.17 58.0 52.8 49.2 Cached Memory (64) 244 ms 5.27 57.5 52.3 49.4 Cached Memory[w/o initial’s KV] (48) 171 ms 5.66 56.8 51.0 47.5",
+          "Cached Memory (8) 82 ms 5.91 56.0 50.5 45.7 Cached Memory (32) 149 ms 5.52 57.1 51.7 48.3 Cached Memory (48) 195 ms 5.17 58.0 52.8 49.2 Cached Memory (64) 244 ms 5.27 57.5 52.3 49.4 Cached Memory[w/o initial’s KV] (48) 171 ms 5.66 56.8 51.0 47.5 9",
+          "Cached Memory (32) 149 ms 5.52 57.1 51.7 48.3 Cached Memory (48) 195 ms 5.17 58.0 52.8 49.2 Cached Memory (64) 244 ms 5.27 57.5 52.3 49.4 Cached Memory[w/o initial’s KV] (48) 171 ms 5.66 56.8 51.0 47.5 9",
+          "Cached Memory (48) 195 ms 5.17 58.0 52.8 49.2 Cached Memory (64) 244 ms 5.27 57.5 52.3 49.4 Cached Memory[w/o initial’s KV] (48) 171 ms 5.66 56.8 51.0 47.5 9"
+        ]
+      },
+      {
+        "page": 10,
+        "blocks": [
+          "Ablation on memory size. We present the ablation studies on memory size in Table 5. First, as shown in the first row, with a memory of 8 frames, the original VGGT model without caching necessitates re-computation of the entire sequence for each new frame’s feature extraction. This re￾sults in an inference overhead of 268 ms. Furthermore, as the memory size increases, the inference overhead of VGGT grows exponentially, rendering it impractical for real-world applications. In contrast, our JanusVLN dynamically caches historical KV, eliminating the need for re-computation. This approach significantly reduces inference overhead by 69%-90% while also yielding a slight"
+        ]
+      },
+      {
+        "page": 18,
+        "blocks": [
+          "Real world quantitative results. In our real-world experiments, we employed a Unitree Go2 robotic platform equipped with an Insta360 X5 camera to capture forward-facing RGB images. The JanusVLN model operates on a remote server with an A10 GPU, continuously processing RGB images and instructions, and sending the inference results back to the robot for execution. For quantitative real-world evaluation, we used 25 instructions, each repeated three times, covering both general and spatial understanding tasks. A trial is considered successful if the robot stops within"
+        ]
+      }
+    ]
+  }
+]

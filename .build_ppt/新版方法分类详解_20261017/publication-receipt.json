@@ -1,0 +1,31 @@
+{
+  "final_path": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\output\\一级分支分类PPT\\一级分支分类_新版方法详解_20261017.pptx",
+  "sha256": "b2f9ebc374083872f68fb9055f7febad84172388ae17e8e1543619e0e67f071b",
+  "bytes": 7026301,
+  "slides": 44,
+  "notes": 44,
+  "media": 10,
+  "tables": 27,
+  "method_categories": 8,
+  "intro_slides": [
+    3,
+    12,
+    20,
+    26,
+    30
+  ],
+  "compute_starts": 38,
+  "reviewed_papers": 14,
+  "source_preserved": true,
+  "source_sha256": "a9dfbde8d3bb1a9d04c76b9d626757c9cc759a37e3f9aceac2869fded9122d29",
+  "font_policy": {
+    "basis": "reference",
+    "families": [
+      "Microsoft YaHei",
+      "微软雅黑"
+    ],
+    "same_family_aliases": true
+  },
+  "validation": "Bundled integrity/layout/native-table/chart validators, nature audit, first-party PPTX import and all-slide render, exclusive copy with SHA256. Standard finalizer realpath is unavailable in Windows sandbox.",
+  "native_powerpoint_opened": false
+}

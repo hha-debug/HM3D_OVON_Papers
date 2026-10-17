@@ -1,0 +1,155 @@
+{
+  "final_path": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\output\\一级分支分类PPT\\一级分支分类_先方法后算力_20261016.pptx",
+  "sha256": "99ca8b9ac223cf715bcba8da7bf879dbf13c84ca4c04838792ecb24b6db11759",
+  "bytes": 5900000,
+  "slide_count": 27,
+  "method_pages": [
+    3,
+    20
+  ],
+  "compute_pages": [
+    21,
+    27
+  ],
+  "notes": 27,
+  "figures": 7,
+  "source_preserved": true,
+  "visual_comparisons": [
+    {
+      "old": 1,
+      "new": 1,
+      "unchanged_except_authorized_text": true
+    },
+    {
+      "old": 2,
+      "new": 2,
+      "unchanged_except_authorized_text": true
+    },
+    {
+      "old": 10,
+      "new": 3,
+      "unchanged_except_authorized_text": true
+    },
+    {
+      "old": 11,
+      "new": 4,
+      "unchanged_except_authorized_text": true
+    },
+    {
+      "old": 12,
+      "new": 5,
+      "unchanged_except_authorized_text": true
+    },
+    {
+      "old": 13,
+      "new": 6,
+      "unchanged_except_authorized_text": true
+    },
+    {
+      "old": 14,
+      "new": 7,
+      "unchanged_except_authorized_text": true
+    },
+    {
+      "old": 15,
+      "new": 8,
+      "unchanged_except_authorized_text": true
+    },
+    {
+      "old": 16,
+      "new": 9,
+      "unchanged_except_authorized_text": true
+    },
+    {
+      "old": 17,
+      "new": 10,
+      "unchanged_except_authorized_text": true
+    },
+    {
+      "old": 18,
+      "new": 11,
+      "unchanged_except_authorized_text": true
+    },
+    {
+      "old": 19,
+      "new": 12,
+      "unchanged_except_authorized_text": true
+    },
+    {
+      "old": 20,
+      "new": 13,
+      "unchanged_except_authorized_text": true
+    },
+    {
+      "old": 21,
+      "new": 14,
+      "unchanged_except_authorized_text": true
+    },
+    {
+      "old": 22,
+      "new": 15,
+      "unchanged_except_authorized_text": true
+    },
+    {
+      "old": 23,
+      "new": 16,
+      "unchanged_except_authorized_text": true
+    },
+    {
+      "old": 24,
+      "new": 17,
+      "unchanged_except_authorized_text": true
+    },
+    {
+      "old": 25,
+      "new": 18,
+      "unchanged_except_authorized_text": true
+    },
+    {
+      "old": 26,
+      "new": 19,
+      "unchanged_except_authorized_text": true
+    },
+    {
+      "old": 27,
+      "new": 20,
+      "unchanged_except_authorized_text": true
+    },
+    {
+      "old": 3,
+      "new": 21,
+      "unchanged_except_authorized_text": true
+    },
+    {
+      "old": 4,
+      "new": 22,
+      "unchanged_except_authorized_text": true
+    },
+    {
+      "old": 5,
+      "new": 23,
+      "unchanged_except_authorized_text": true
+    },
+    {
+      "old": 6,
+      "new": 24,
+      "unchanged_except_authorized_text": true
+    },
+    {
+      "old": 7,
+      "new": 25,
+      "unchanged_except_authorized_text": true
+    },
+    {
+      "old": 8,
+      "new": 26,
+      "unchanged_except_authorized_text": true
+    },
+    {
+      "old": 9,
+      "new": 27,
+      "unchanged_except_authorized_text": true
+    }
+  ],
+  "finalization": "Packaged validators + first-party reimport/render + no-overwrite copy; realpath unavailable in Windows sandbox"
+}

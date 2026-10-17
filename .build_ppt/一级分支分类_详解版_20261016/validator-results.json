@@ -1,0 +1,151 @@
+{
+  "validators": [
+    {
+      "name": "package",
+      "exit_code": 0,
+      "output": "{\n  \"chart_count\": 0,\n  \"claim_boundary\": \"Structural package checks only; no slide text, notes, formulas, chart values, or native PowerPoint execution were inspected.\",\n  \"finding_count\": 0,\n  \"findings\": [],\n  \"notes_parts_skipped\": 27,\n  \"relationship_part_count\": 64,\n  \"slide_count\": 27,\n  \"status\": \"pass\"\n}\n",
+      "error": "",
+      "args": [
+        "C:\\Users\\horizona\\.codex\\plugins\\cache\\openai-primary-runtime\\presentations\\26.1007.11041\\skills\\presentations\\container_tools\\inspect_presentation_package_integrity.py",
+        "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\.build_ppt\\一级分支分类_详解版_20261016\\candidate.pptx",
+        "--fail-on-findings"
+      ]
+    },
+    {
+      "name": "layout",
+      "exit_code": 0,
+      "output": "{\n  \"finding_count\": 0,\n  \"findings\": [],\n  \"font_policy\": {\n    \"checked_text_script_count\": 554,\n    \"native_font_rendering_verified\": false,\n    \"observed_font_families\": [\n      \"Microsoft YaHei\"\n    ],\n    \"observed_font_use_counts\": {\n      \"Microsoft YaHei\": 554\n    },\n    \"passed\": true,\n    \"performed\": true\n  },\n  \"slide_count\": 27,\n  \"slide_size_in\": [\n    13.3333,\n    7.5\n  ],\n  \"warning_count\": 0,\n  \"warnings\": []\n}\n",
+      "error": "",
+      "args": [
+        "C:\\Users\\horizona\\.codex\\plugins\\cache\\openai-primary-runtime\\presentations\\26.1007.11041\\skills\\presentations\\container_tools\\inspect_presentation_layout_geometry.py",
+        "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\.build_ppt\\一级分支分类_详解版_20261016\\candidate.pptx",
+        "--fail-on-findings",
+        "--expected-slide-size-emu",
+        "12192000,6858000",
+        "--expected-slide-count",
+        "27",
+        "--required-default-font-family",
+        "Microsoft YaHei",
+        "--validate-bullet-geometry",
+        "--validate-heading-fit",
+        "--require-native-table-slide",
+        "3",
+        "--require-native-table-slide",
+        "4",
+        "--require-native-table-slide",
+        "5",
+        "--require-native-table-slide",
+        "6",
+        "--require-native-table-slide",
+        "7",
+        "--require-native-table-slide",
+        "8",
+        "--require-native-table-slide",
+        "9",
+        "--require-native-table-slide",
+        "10",
+        "--require-native-table-slide",
+        "12",
+        "--require-native-table-slide",
+        "16",
+        "--require-native-table-slide",
+        "18",
+        "--require-native-table-slide",
+        "19",
+        "--require-native-table-slide",
+        "21",
+        "--require-native-table-slide",
+        "24",
+        "--require-native-table-slide",
+        "25",
+        "--require-native-table-slide",
+        "27"
+      ]
+    },
+    {
+      "name": "table-arithmetic",
+      "exit_code": 0,
+      "output": "{\"checked_column_count\": 0, \"checks\": [], \"claim_boundary\": \"Displayed-value arithmetic with rounding tolerance; not source-data verification.\", \"eligible_table_count\": 0, \"finding_count\": 0, \"findings\": [], \"native_table_count\": 16, \"passed\": true, \"schema_version\": \"presentation-native-table-arithmetic.v1\", \"skipped_tables\": [{\"reason\": \"no_numeric_amounts\", \"slide\": 3, \"table\": 1}, {\"reason\": \"no_numeric_amounts\", \"slide\": 4, \"table\": 1}, {\"reason\": \"no_numeric_amounts\", \"slide\": 5, \"table\": 1}, {\"reason\": \"no_numeric_amounts\", \"slide\": 6, \"table\": 1}, {\"reason\": \"no_numeric_amounts\", \"slide\": 7, \"table\": 1}, {\"reason\": \"no_numeric_amounts\", \"slide\": 8, \"table\": 1}, {\"reason\": \"no_numeric_amounts\", \"slide\": 9, \"table\": 1}, {\"reason\": \"no_numeric_amounts\", \"slide\": 10, \"table\": 1}, {\"reason\": \"no_unambiguous_bottom_total\", \"slide\": 12, \"table\": 1}, {\"reason\": \"no_numeric_amounts\", \"slide\": 16, \"table\": 1}, {\"reason\": \"no_unambiguous_bottom_total\", \"slide\": 18, \"table\": 1}, {\"reason\": \"no_numeric_amounts\", \"slide\": 19, \"table\": 1}, {\"reason\": \"no_numeric_amounts\", \"slide\": 21, \"table\": 1}, {\"reason\": \"no_numeric_amounts\", \"slide\": 24, \"table\": 1}, {\"reason\": \"no_numeric_amounts\", \"slide\": 25, \"table\": 1}, {\"reason\": \"no_numeric_amounts\", \"slide\": 27, \"table\": 1}], \"slide_count\": 27, \"warning_count\": 0, \"warnings\": []}\n",
+      "error": "",
+      "args": [
+        "C:\\Users\\horizona\\.codex\\plugins\\cache\\openai-primary-runtime\\presentations\\26.1007.11041\\skills\\presentations\\container_tools\\native_table_arithmetic_gate.py",
+        "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\.build_ppt\\一级分支分类_详解版_20261016\\candidate.pptx"
+      ]
+    },
+    {
+      "name": "chart-titles",
+      "exit_code": 0,
+      "output": "{\"checks\":[],\"finding_count\":0,\"findings\":[],\"native_chart_count\":0,\"native_powerpoint_verified\":false,\"passed\":true,\"presentation_sha256\":\"6235189d4d5cc6dc7fc810d8b27555968bfd82b70b9aeaa673b423babe9ea4ee\",\"schema_version\":\"presentation-native-chart-titles.v1\",\"slide_count\":27,\"source_text_emitted\":false,\"unresolved_linked_title_count\":0}\n",
+      "error": "",
+      "args": [
+        "C:\\Users\\horizona\\.codex\\plugins\\cache\\openai-primary-runtime\\presentations\\26.1007.11041\\skills\\presentations\\container_tools\\native_chart_title_gate.py",
+        "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\.build_ppt\\一级分支分类_详解版_20261016\\candidate.pptx"
+      ]
+    },
+    {
+      "name": "quantitative-charts",
+      "exit_code": 0,
+      "output": "{\"chart_count\":0,\"chart_counts\":{},\"chart_owner_slide_parts\":{},\"chart_owner_slides\":[],\"package_sha256\":\"6235189d4d5cc6dc7fc810d8b27555968bfd82b70b9aeaa673b423babe9ea4ee\",\"schema_version\":\"owner-private.actual-native-chart-discovery.v1\",\"slide_count\":27,\"source_attachments_accessed\":false,\"source_required_chart_owners_inferred\":false}\n",
+      "error": "",
+      "args": [
+        "C:\\Users\\horizona\\.codex\\plugins\\cache\\openai-primary-runtime\\presentations\\26.1007.11041\\skills\\presentations\\container_tools\\native_quantitative_chart_gate.py",
+        "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\.build_ppt\\一级分支分类_详解版_20261016\\candidate.pptx",
+        "--discover-chart-slides"
+      ]
+    },
+    {
+      "name": "nature-audit",
+      "exit_code": 0,
+      "output": "",
+      "error": "",
+      "args": [
+        "D:/Codex/skills/nature-paper2ppt/scripts/audit_pptx_quality.py",
+        "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\.build_ppt\\一级分支分类_详解版_20261016\\candidate.pptx",
+        "--report",
+        "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\.build_ppt\\一级分支分类_详解版_20261016\\nature-audit.md",
+        "--json",
+        "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\.build_ppt\\一级分支分类_详解版_20261016\\nature-audit.json",
+        "--fail-on",
+        "high"
+      ]
+    }
+  ],
+  "original_slides": [
+    {
+      "slide": 1,
+      "pixel_identical": true
+    },
+    {
+      "slide": 2,
+      "pixel_identical": true
+    },
+    {
+      "slide": 3,
+      "pixel_identical": true
+    },
+    {
+      "slide": 4,
+      "pixel_identical": true
+    },
+    {
+      "slide": 5,
+      "pixel_identical": true
+    },
+    {
+      "slide": 6,
+      "pixel_identical": true
+    },
+    {
+      "slide": 7,
+      "pixel_identical": true
+    },
+    {
+      "slide": 8,
+      "pixel_identical": true
+    },
+    {
+      "slide": 9,
+      "pixel_identical": true
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+{
+  "file": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\.build_ppt\\一级分支分类_详解版_20261016\\candidate.pptx",
+  "slide_count": 27,
+  "media_count": 7,
+  "notes_count": 27,
+  "finding_counts": {
+    "high": 0,
+    "medium": 0,
+    "low": 4
+  },
+  "findings": [
+    {
+      "severity": "low",
+      "slide": 1,
+      "code": "alignment_near_miss",
+      "message": "Two objects have left-edge near-miss alignment (3.0 pt apart)"
+    },
+    {
+      "severity": "low",
+      "slide": 1,
+      "code": "alignment_near_miss",
+      "message": "Two objects have left-edge near-miss alignment (3.0 pt apart)"
+    },
+    {
+      "severity": "low",
+      "slide": 1,
+      "code": "alignment_near_miss",
+      "message": "Two objects have left-edge near-miss alignment (3.0 pt apart)"
+    },
+    {
+      "severity": "low",
+      "slide": 1,
+      "code": "alignment_near_miss",
+      "message": "Two objects have left-edge near-miss alignment (3.0 pt apart)"
+    }
+  ],
+  "slides": [
+    {
+      "slide": 1,
+      "shape_count": 8,
+      "image_count": 0,
+      "text_chars": 58
+    },
+    {
+      "slide": 2,
+      "shape_count": 35,
+      "image_count": 0,
+      "text_chars": 227
+    },
+    {
+      "slide": 3,
+      "shape_count": 5,
+      "image_count": 0,
+      "text_chars": 268
+    },
+    {
+      "slide": 4,
+      "shape_count": 4,
+      "image_count": 0,
+      "text_chars": 113
+    },
+    {
+      "slide": 5,
+      "shape_count": 5,
+      "image_count": 0,
+      "text_chars": 142
+    },
+    {
+      "slide": 6,
+      "shape_count": 5,
+      "image_count": 0,
+      "text_chars": 133
+    },
+    {
+      "slide": 7,
+      "shape_count": 5,
+      "image_count": 0,
+      "text_chars": 201
+    },
+    {
+      "slide": 8,
+      "shape_count": 4,
+      "image_count": 0,
+      "text_chars": 153
+    },
+    {
+      "slide": 9,
+      "shape_count": 4,
+      "image_count": 0,
+      "text_chars": 192
+    },
+    {
+      "slide": 10,
+      "shape_count": 6,
+      "image_count": 0,
+      "text_chars": 226
+    },
+    {
+      "slide": 11,
+      "shape_count": 5,
+      "image_count": 1,
+      "text_chars": 70
+    },
+    {
+      "slide": 12,
+      "shape_count": 12,
+      "image_count": 0,
+      "text_chars": 284
+    },
+    {
+      "slide": 13,
+      "shape_count": 11,
+      "image_count": 0,
+      "text_chars": 257
+    },
+    {
+      "slide": 14,
+      "shape_count": 6,
+      "image_count": 1,
+      "text_chars": 102
+    },
+    {
+      "slide": 15,
+      "shape_count": 12,
+      "image_count": 1,
+      "text_chars": 238
+    },
+    {
+      "slide": 16,
+      "shape_count": 6,
+      "image_count": 0,
+      "text_chars": 229
+    },
+    {
+      "slide": 17,
+      "shape_count": 6,
+      "image_count": 1,
+      "text_chars": 127
+    },
+    {
+      "slide": 18,
+      "shape_count": 9,
+      "image_count": 0,
+      "text_chars": 293
+    },
+    {
+      "slide": 19,
+      "shape_count": 6,
+      "image_count": 0,
+      "text_chars": 191
+    },
+    {
+      "slide": 20,
+      "shape_count": 6,
+      "image_count": 1,
+      "text_chars": 124
+    },
+    {
+      "slide": 21,
+      "shape_count": 12,
+      "image_count": 0,
+      "text_chars": 271
+    },
+    {
+      "slide": 22,
+      "shape_count": 11,
+      "image_count": 0,
+      "text_chars": 276
+    },
+    {
+      "slide": 23,
+      "shape_count": 10,
+      "image_count": 1,
+      "text_chars": 153
+    },
+    {
+      "slide": 24,
+      "shape_count": 9,
+      "image_count": 0,
+      "text_chars": 259
+    },
+    {
+      "slide": 25,
+      "shape_count": 5,
+      "image_count": 0,
+      "text_chars": 214
+    },
+    {
+      "slide": 26,
+      "shape_count": 10,
+      "image_count": 1,
+      "text_chars": 132
+    },
+    {
+      "slide": 27,
+      "shape_count": 5,
+      "image_count": 0,
+      "text_chars": 256
+    }
+  ]
+}

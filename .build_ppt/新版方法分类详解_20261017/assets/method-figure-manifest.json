@@ -1,0 +1,186 @@
+[
+  {
+    "asset": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\.build_ppt\\新版方法分类详解_20261017\\assets\\d3d_fig2_method.png",
+    "source_pdf": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\04_三维空间表征与目标推理\\2026_CVPR_D3D-VLP.pdf",
+    "pdf_page_1_based": 3,
+    "figure": "Figure 2",
+    "panel": "full figure",
+    "render_scale": 4,
+    "dpi": 288,
+    "page_size_points": [
+      612.0,
+      792.0
+    ],
+    "crop_coordinates_points_top_left": [
+      50,
+      67,
+      560,
+      228
+    ],
+    "crop_coordinates_pixels_top_left": [
+      200,
+      268,
+      2240,
+      912
+    ],
+    "size_pixels": [
+      2040,
+      644
+    ],
+    "crop_qa": "pass: full page preview followed by individual view_image inspection on 2026-10-17",
+    "preserved": "All method labels, arrows, legends, input/output labels and small safety margin.",
+    "omitted": "Surrounding body text and figure caption only.",
+    "slide_placement": "Use full width; keep dense original labels readable. D3D particularly needs approximately 11-12 inches width on a 16:9 slide. SoftNav and JanusVLN need approximately 8-9 inches width with concise annotations outside the figure.",
+    "notes": "Original figure content unchanged."
+  },
+  {
+    "asset": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\.build_ppt\\新版方法分类详解_20261017\\assets\\softnav_fig2_method.png",
+    "source_pdf": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\04_三维空间表征与目标推理\\2607.14586v1.pdf",
+    "pdf_page_1_based": 3,
+    "figure": "Figure 2",
+    "panel": "full figure",
+    "render_scale": 4,
+    "dpi": 288,
+    "page_size_points": [
+      612.0,
+      792.0
+    ],
+    "crop_coordinates_points_top_left": [
+      92,
+      58,
+      515,
+      325
+    ],
+    "crop_coordinates_pixels_top_left": [
+      368,
+      232,
+      2060,
+      1300
+    ],
+    "size_pixels": [
+      1692,
+      1068
+    ],
+    "crop_qa": "pass: full page preview followed by individual view_image inspection on 2026-10-17",
+    "preserved": "All method labels, arrows, legends, input/output labels and small safety margin.",
+    "omitted": "Surrounding body text and figure caption only.",
+    "slide_placement": "Use full width; keep dense original labels readable. D3D particularly needs approximately 11-12 inches width on a 16:9 slide. SoftNav and JanusVLN need approximately 8-9 inches width with concise annotations outside the figure.",
+    "notes": "Original figure content unchanged."
+  },
+  {
+    "asset": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\.build_ppt\\新版方法分类详解_20261017\\assets\\janusvln_fig2_method.png",
+    "source_pdf": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\05_视觉语言动作决策与视频记忆\\ICLR-2026-janusvln-decoupling-semantics-and-spatiality-with-dual-implicit-memory-for-vision-language-navigation-Paper-Conference.pdf",
+    "pdf_page_1_based": 5,
+    "figure": "Figure 2",
+    "panel": "full figure",
+    "render_scale": 4,
+    "dpi": 288,
+    "page_size_points": [
+      612.0,
+      792.0
+    ],
+    "crop_coordinates_points_top_left": [
+      104,
+      78,
+      507,
+      303
+    ],
+    "crop_coordinates_pixels_top_left": [
+      416,
+      312,
+      2028,
+      1212
+    ],
+    "size_pixels": [
+      1612,
+      900
+    ],
+    "crop_qa": "pass: full page preview followed by individual view_image inspection on 2026-10-17",
+    "preserved": "All method labels, arrows, legends, input/output labels and small safety margin.",
+    "omitted": "Surrounding body text and figure caption only.",
+    "slide_placement": "Use full width; keep dense original labels readable. D3D particularly needs approximately 11-12 inches width on a 16:9 slide. SoftNav and JanusVLN need approximately 8-9 inches width with concise annotations outside the figure.",
+    "notes": "JanusVLN image reflects paper design; speaker notes should distinguish public evaluation replay on Qwen side from cross-step VGGT KV cache."
+  },
+  {
+    "asset": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\.build_ppt\\新版方法分类详解_20261017\\assets\\softnav_encoding_detail.png",
+    "source_pdf": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\04_三维空间表征与目标推理\\2607.14586v1.pdf",
+    "pdf_page_1_based": 3,
+    "figure": "Figure 2",
+    "panel": "upper: visual encoding and soft-token injection",
+    "render_scale": 4,
+    "dpi": 288,
+    "page_size_points": [
+      612.0,
+      792.0
+    ],
+    "crop_coordinates_points_top_left": [
+      92.0,
+      58.0,
+      515.0,
+      184.25
+    ],
+    "crop_coordinates_pixels_top_left": [
+      368,
+      232,
+      2060,
+      737
+    ],
+    "size_pixels": [
+      1692,
+      505
+    ],
+    "crop_qa": "pass: individually inspected with view_image on 2026-10-17; complete half-figure labels, clean margins, divider omitted",
+    "preserved": "All method labels, arrows, legends, input/output labels and small safety margin.",
+    "omitted": "Surrounding body text and figure caption only.",
+    "slide_placement": "Full-width on separate slides; preserve all labels.",
+    "notes": "The two details together cover all method content of Fig. 2. Only the gray divider and adjacent blank strip y=505..519 in parent image are omitted; no method labels or diagrams omitted.",
+    "derived_from": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\.build_ppt\\新版方法分类详解_20261017\\assets\\softnav_fig2_method.png",
+    "crop_coordinates_pixels_in_parent": [
+      0,
+      0,
+      1692,
+      505
+    ]
+  },
+  {
+    "asset": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\.build_ppt\\新版方法分类详解_20261017\\assets\\softnav_decision_detail.png",
+    "source_pdf": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\04_三维空间表征与目标推理\\2607.14586v1.pdf",
+    "pdf_page_1_based": 3,
+    "figure": "Figure 2",
+    "panel": "lower: multimodal fusion and frontier decision",
+    "render_scale": 4,
+    "dpi": 288,
+    "page_size_points": [
+      612.0,
+      792.0
+    ],
+    "crop_coordinates_points_top_left": [
+      92.0,
+      188.0,
+      515.0,
+      325.0
+    ],
+    "crop_coordinates_pixels_top_left": [
+      368,
+      752,
+      2060,
+      1300
+    ],
+    "size_pixels": [
+      1692,
+      548
+    ],
+    "crop_qa": "pass: individually inspected with view_image on 2026-10-17; complete half-figure labels, clean margins, divider omitted",
+    "preserved": "All method labels, arrows, legends, input/output labels and small safety margin.",
+    "omitted": "Surrounding body text and figure caption only.",
+    "slide_placement": "Full-width on separate slides; preserve all labels.",
+    "notes": "The two details together cover all method content of Fig. 2. Only the gray divider and adjacent blank strip y=505..519 in parent image are omitted; no method labels or diagrams omitted.",
+    "derived_from": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\.build_ppt\\新版方法分类详解_20261017\\assets\\softnav_fig2_method.png",
+    "crop_coordinates_pixels_in_parent": [
+      0,
+      520,
+      1692,
+      1068
+    ]
+  }
+]

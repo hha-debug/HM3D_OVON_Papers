@@ -1,0 +1,15 @@
+{
+  "slides": 44,
+  "notes": 44,
+  "media": 10,
+  "tables": 27,
+  "method_categories": 8,
+  "intro_slides": [
+    3,
+    12,
+    20,
+    26,
+    30
+  ],
+  "compute_starts": 38
+}

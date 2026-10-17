@@ -1,0 +1,37 @@
+[
+  {
+    "id": "omninav_fig1",
+    "slide": 11,
+    "alt": "OmniNav原图1：输入表示、快系统连续航点输出、慢系统子目标选择以及共享VLM参数"
+  },
+  {
+    "id": "msgnav_fig3",
+    "slide": 14,
+    "alt": "MSGNav原图3：增量场景图构建与KSS、AVU、CLR、VVD四个导航模块"
+  },
+  {
+    "id": "msgnav_fig4",
+    "slide": 15,
+    "alt": "MSGNav原图4：最近可通行点与按可见率选择的观察位置对比，含候选点与完整图例"
+  },
+  {
+    "id": "astranav_fig2",
+    "slide": 17,
+    "alt": "AstraNav-Memory原图2：压缩视觉编码器、历史图像、相机位姿与语言目标共同输入Qwen2.5-VL-3B"
+  },
+  {
+    "id": "openfrontier_fig2",
+    "slide": 20,
+    "alt": "OpenFrontier原图2：图像前沿识别、VLM相关性评分、信息增益加权、三维前沿管理及路径执行"
+  },
+  {
+    "id": "ovsegdt_fig2",
+    "slide": 23,
+    "alt": "OVSegDT原图2：RGB、目标文字、上一步动作和目标掩码输入，时序Transformer与动作、价值、分割三个头"
+  },
+  {
+    "id": "goatbench_fig1",
+    "slide": 26,
+    "alt": "GOAT-Bench原图1：类别、图像和语言目标组成的连续导航任务，完整目标序列与模态图例"
+  }
+]

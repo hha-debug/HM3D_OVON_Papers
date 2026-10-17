@@ -1,0 +1,16 @@
+{
+  "finalPath": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\output\\一级分支分类PPT\\一级分支分类_方法详解版_20261016.pptx",
+  "sha256": "6235189d4d5cc6dc7fc810d8b27555968bfd82b70b9aeaa673b423babe9ea4ee",
+  "originalPath": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\output\\一级分支分类PPT\\一级分支分类_20261016.pptx",
+  "originalSha256": "30a7367abcb61b3e84f5186ab89b64b3cdf79446f25ca2a26b87f2756fd7674c",
+  "bytes": 5899984,
+  "slideCount": 27,
+  "originalSlidesUnchanged": true,
+  "roundtripPixelIdentical": 27,
+  "paperNamesVerified": 18,
+  "nativeTableCount": 16,
+  "embeddedFigureCount": 7,
+  "validatorResults": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\.build_ppt\\一级分支分类_详解版_20261016\\validator-results.json",
+  "finalizationMethod": "Same packaged validators, first-party import+render, COPYFILE_EXCL, SHA-256 verification; sandbox realpath unavailable",
+  "nativePowerPointOpened": false
+}

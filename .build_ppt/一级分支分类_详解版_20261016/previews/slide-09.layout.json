@@ -1,0 +1,7 @@
+{"schema":"openai.presentation.layout/v5","unit":"px","slide":{"id":"sl/udsvah03","index":8,"layout":{"id":"ly/14ra9krq","name":"Blank"},"backgroundColor":"rgba(250,251,252,1)","position":{"left":0,"top":0,"width":1280,"height":720}},
+"elements":[
+{"id":"sh/mdonql4z","kind":"textbox","name":"slide-title","position":{"left":72,"top":45,"width":1136,"height":64},"text":"训练算力统计口径","style":{"fontSize":46,"typeface":"Microsoft YaHei","color":"#182D40","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/1cfmhgne","kind":"textbox","name":"page-number","position":{"left":1160,"top":679,"width":48,"height":24},"text":"09","style":{"fontSize":18,"typeface":"Microsoft YaHei","color":"#586D7B","alignment":"right"},"geometry":"rect","lineWidth":0},
+{"id":"tb/t43yhg7i","kind":"table","position":{"left":72,"top":158,"width":1136,"height":454},"text":"统计项\t口径\n配置来源\t各篇阅读笔记记录的论文或作者报告配置\n成本范围\t基础模型与复用组件的预训练开销另计\n免训练方法仍需推理资源\n时间与卡时\tGPU·小时 = GPU 数量 × 训练小时数\n不同型号 GPU 的卡时分别保留\n缺失与估算\t未报告的数据保留“未报告”\nCompassNav RFT 的约56.7小时属于换算估计","rows":5,"cols":2},
+{"id":"sh/nex4jq5k","kind":"textbox","name":"source-note","position":{"left":72,"top":642,"width":1080,"height":48},"text":"JanusVLN 的训练配置保留“阅读笔记转引作者答复”来源说明","style":{"fontSize":18,"typeface":"Microsoft YaHei","color":"#586D7B","alignment":"left"},"geometry":"rect","lineWidth":0}
+]}

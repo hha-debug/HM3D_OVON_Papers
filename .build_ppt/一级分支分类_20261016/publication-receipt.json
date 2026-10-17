@@ -1,0 +1,21 @@
+{
+  "finalPath": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\output\\一级分支分类PPT\\一级分支分类_20261016.pptx",
+  "sha256": "30a7367abcb61b3e84f5186ab89b64b3cdf79446f25ca2a26b87f2756fd7674c",
+  "bytes": 52242,
+  "slideCount": 9,
+  "paperNamesVerified": 18,
+  "editableNativeTableSlides": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "firstPartyPptxImport": "passed",
+  "renderedSlidesAfterImport": 9,
+  "finalizationMethod": "Original packaged validators run independently, followed by first-party import and hash-verified copy",
+  "finalizerLimitation": "The wrapper could not canonicalize paths under the Windows sandbox (EPERM). An escalation attempt timed out before execution.",
+  "nativePowerPointVerified": false
+}

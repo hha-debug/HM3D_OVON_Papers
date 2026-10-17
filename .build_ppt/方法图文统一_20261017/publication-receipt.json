@@ -1,0 +1,17 @@
+{
+  "status": "original_updated",
+  "delivered": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\output\\一级分支分类PPT\\一级分支分类_新版方法详解_20261017.pptx",
+  "sha256": "07ecda6ee64ca64f2bfdfdd15240a250892dc5273b991fce7a35cad16152c6d4",
+  "changed_slides": [
+    7,
+    14,
+    16,
+    17,
+    22,
+    24,
+    28,
+    32
+  ],
+  "all_other_parts_identical": true,
+  "powerpoint_visual_review": true
+}

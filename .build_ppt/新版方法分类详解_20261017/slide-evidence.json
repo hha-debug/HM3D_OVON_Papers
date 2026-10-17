@@ -1,0 +1,58 @@
+[
+  {
+    "id": "y01kdn",
+    "records": [
+      "arch_omni_U",
+      "arch_mtu_goat_U",
+      "arch_omni_r2r",
+      "arch_omni_rxr",
+      "arch_d3d_sg3d"
+    ],
+    "slide": 3
+  },
+  {
+    "id": "uzjsbt",
+    "records": [
+      "env_soft_ovon_U",
+      "env_soft_goat_U",
+      "env_msg_goat",
+      "env_msg_hm3d",
+      "env_soft_sg3d"
+    ],
+    "slide": 12
+  },
+  {
+    "id": "r7uvbp",
+    "records": [
+      "mem_astra_ovon_U",
+      "mem_astra_goat_U",
+      "mem_janus_r2r",
+      "mem_janus_rxr"
+    ],
+    "slide": 20
+  },
+  {
+    "id": "6g8wz5",
+    "records": [
+      "exp_vlfm_gibson",
+      "exp_open_hm3d",
+      "exp_open_mp3d",
+      "exp_vlfm_ovon_S",
+      "exp_vlfm_ovon_Y",
+      "exp_open_ovon"
+    ],
+    "slide": 26
+  },
+  {
+    "id": "xj52zb",
+    "records": [
+      "train_ovseg_U",
+      "train_compass_ovon",
+      "train_compass_hm3d2",
+      "train_compass_mp3d",
+      "train_compass_iin",
+      "train_compass_procthor"
+    ],
+    "slide": 30
+  }
+]

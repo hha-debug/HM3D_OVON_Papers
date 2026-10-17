@@ -1,0 +1,273 @@
+{
+  "final_path": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\output\\一级分支分类PPT\\一级分支分类_含各方向性能对比_20261016.pptx",
+  "sha256": "bc73c0d0e400e194bccd96158e5a3f9b3cdfa4ecbc2f90aa9ea8c2584d6d4a7e",
+  "bytes": 5939673,
+  "slide_count": 34,
+  "reviewed_papers": 14,
+  "curated_records": 71,
+  "notes": 34,
+  "figures": 7,
+  "native_tables": 25,
+  "scope": {
+    "scope": "用户确认：仅比较已收录14篇方法论文；不是全领域SOTA检索",
+    "selection": "同方向、同benchmark分别选主结果中的领先报告值。消融、真值掩码、超参数变体不替代主结果。SuperNav模型替换配置单列。",
+    "pairing": "每组SR和SPL均来自同一篇论文同一配置。SR/SPL领先论文不同则并列，禁止拼接成虚构模型。",
+    "comparability": "未经统一复测。不同子集、距离阈值、目标形式、传感器和数据条件保留并列，不宣称严格排行榜。",
+    "units": "SR、SPL统一为百分制；SuperNav SPL从0–1乘100。—为未报告。",
+    "sg3d": "s-SR是子任务，t-SR是整任务；SPL沿原论文导航统计口径，不把t-SR写成普通SR。",
+    "not_navigation_metrics": "CityWalker MAOE、OpenEQA/MP3D-EQA问答分数、A-EQA的LLM-SR/LLM-SPL均不充当导航SR/SPL。",
+    "version": "性能数据采用当前收录本地论文版本。OVSegDT旧网页摘要与本地Table 1不同，采用本地主表；MSGNav旧arXiv与CVPR版不同，不混用。"
+  },
+  "roundtrip": [
+    {
+      "slide": 1,
+      "pixel_identical": true
+    },
+    {
+      "slide": 2,
+      "pixel_identical": true
+    },
+    {
+      "slide": 3,
+      "pixel_identical": true
+    },
+    {
+      "slide": 4,
+      "pixel_identical": true
+    },
+    {
+      "slide": 5,
+      "pixel_identical": true
+    },
+    {
+      "slide": 6,
+      "pixel_identical": true
+    },
+    {
+      "slide": 7,
+      "pixel_identical": true
+    },
+    {
+      "slide": 8,
+      "pixel_identical": true
+    },
+    {
+      "slide": 9,
+      "pixel_identical": true
+    },
+    {
+      "slide": 10,
+      "pixel_identical": true
+    },
+    {
+      "slide": 11,
+      "pixel_identical": true
+    },
+    {
+      "slide": 12,
+      "pixel_identical": true
+    },
+    {
+      "slide": 13,
+      "pixel_identical": true
+    },
+    {
+      "slide": 14,
+      "pixel_identical": true
+    },
+    {
+      "slide": 15,
+      "pixel_identical": true
+    },
+    {
+      "slide": 16,
+      "pixel_identical": true
+    },
+    {
+      "slide": 17,
+      "pixel_identical": true
+    },
+    {
+      "slide": 18,
+      "pixel_identical": true
+    },
+    {
+      "slide": 19,
+      "pixel_identical": true
+    },
+    {
+      "slide": 20,
+      "pixel_identical": true
+    },
+    {
+      "slide": 21,
+      "pixel_identical": true
+    },
+    {
+      "slide": 22,
+      "pixel_identical": true
+    },
+    {
+      "slide": 23,
+      "pixel_identical": true
+    },
+    {
+      "slide": 24,
+      "pixel_identical": true
+    },
+    {
+      "slide": 25,
+      "pixel_identical": true
+    },
+    {
+      "slide": 26,
+      "pixel_identical": true
+    },
+    {
+      "slide": 27,
+      "pixel_identical": true
+    },
+    {
+      "slide": 28,
+      "pixel_identical": true
+    },
+    {
+      "slide": 29,
+      "pixel_identical": true
+    },
+    {
+      "slide": 30,
+      "pixel_identical": true
+    },
+    {
+      "slide": 31,
+      "pixel_identical": true
+    },
+    {
+      "slide": 32,
+      "pixel_identical": true
+    },
+    {
+      "slide": 33,
+      "pixel_identical": true
+    },
+    {
+      "slide": 34,
+      "pixel_identical": true
+    }
+  ],
+  "retained_slides": [
+    {
+      "old": 1,
+      "new": 1,
+      "unchanged_except_authorized_labels": true
+    },
+    {
+      "old": 2,
+      "new": 2,
+      "unchanged_except_authorized_labels": true
+    },
+    {
+      "old": 4,
+      "new": 7,
+      "unchanged_except_authorized_labels": true
+    },
+    {
+      "old": 5,
+      "new": 8,
+      "unchanged_except_authorized_labels": true
+    },
+    {
+      "old": 7,
+      "new": 12,
+      "unchanged_except_authorized_labels": true
+    },
+    {
+      "old": 8,
+      "new": 13,
+      "unchanged_except_authorized_labels": true
+    },
+    {
+      "old": 10,
+      "new": 16,
+      "unchanged_except_authorized_labels": true
+    },
+    {
+      "old": 11,
+      "new": 17,
+      "unchanged_except_authorized_labels": true
+    },
+    {
+      "old": 13,
+      "new": 19,
+      "unchanged_except_authorized_labels": true
+    },
+    {
+      "old": 14,
+      "new": 20,
+      "unchanged_except_authorized_labels": true
+    },
+    {
+      "old": 16,
+      "new": 23,
+      "unchanged_except_authorized_labels": true
+    },
+    {
+      "old": 17,
+      "new": 24,
+      "unchanged_except_authorized_labels": true
+    },
+    {
+      "old": 18,
+      "new": 25,
+      "unchanged_except_authorized_labels": true
+    },
+    {
+      "old": 19,
+      "new": 26,
+      "unchanged_except_authorized_labels": true
+    },
+    {
+      "old": 20,
+      "new": 27,
+      "unchanged_except_authorized_labels": true
+    },
+    {
+      "old": 21,
+      "new": 28,
+      "unchanged_except_authorized_labels": true
+    },
+    {
+      "old": 22,
+      "new": 29,
+      "unchanged_except_authorized_labels": true
+    },
+    {
+      "old": 23,
+      "new": 30,
+      "unchanged_except_authorized_labels": true
+    },
+    {
+      "old": 24,
+      "new": 31,
+      "unchanged_except_authorized_labels": true
+    },
+    {
+      "old": 25,
+      "new": 32,
+      "unchanged_except_authorized_labels": true
+    },
+    {
+      "old": 26,
+      "new": 33,
+      "unchanged_except_authorized_labels": true
+    },
+    {
+      "old": 27,
+      "new": 34,
+      "unchanged_except_authorized_labels": true
+    }
+  ],
+  "finalization": "Packaged validators, first-party import/render, exclusive copy and SHA-256; Windows sandbox realpath unavailable",
+  "native_powerpoint_opened": false
+}

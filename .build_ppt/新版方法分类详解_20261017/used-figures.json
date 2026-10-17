@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1mzfqp",
+    "file": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\.build_ppt\\新版方法分类详解_20261017\\assets\\d3d_fig2_method.png",
+    "alt": "D3D-VLP原论文核心方法图，动态三维记忆、结构化计划、目标定位与导航输出",
+    "slide": 7
+  },
+  {
+    "id": "xo3rqo",
+    "file": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\.build_ppt\\新版方法分类详解_20261017\\assets\\softnav_encoding_detail.png",
+    "alt": "SoftNav图2上半部分：视觉历史压缩，三维查询向量经768至2048维投影形成soft tokens",
+    "slide": 16
+  },
+  {
+    "id": "bg0uma",
+    "file": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\.build_ppt\\新版方法分类详解_20261017\\assets\\softnav_decision_detail.png",
+    "alt": "SoftNav图2下半部分：视觉tokens、三维soft tokens与文本共同输入Qwen，输出前沿并执行",
+    "slide": 17
+  },
+  {
+    "id": "5o249v",
+    "file": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\.build_ppt\\新版方法分类详解_20261017\\assets\\janusvln_fig2_method.png",
+    "alt": "JanusVLN原论文双隐式记忆框架，语义特征与流式几何特征融合预测动作",
+    "slide": 24
+  }
+]

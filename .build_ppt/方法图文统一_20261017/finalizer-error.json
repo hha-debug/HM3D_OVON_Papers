@@ -1,0 +1,4 @@
+{
+  "error": "Error: EEXIST: file already exists, open 'E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\.build_ppt\\方法图文统一_20261017\\finalization-receipt.json'",
+  "stack": "Error: EEXIST: file already exists, open 'E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\.build_ppt\\方法图文统一_20261017\\finalization-receipt.json'\n    at async open (node:internal/fs/promises:697:25)\n    at async Object.writeFile (node:internal/fs/promises:1317:14)\n    at async finalizePresentation (file:///C:/Users/horizona/.codex/plugins/cache/openai-primary-runtime/presentations/26.1015.12040/skills/presentations/container_tools/artifact_tool_utils.mjs:1058:5)\n    at async file:///E:/%E7%A7%91%E7%A0%94_%E6%9C%BA%E5%99%A8%E4%BA%BA/HM3D-OVON/HM3D_OVON_Papers/.build_ppt/%E6%96%B9%E6%B3%95%E5%9B%BE%E6%96%87%E7%BB%9F%E4%B8%80_20261017/verify.mjs:27:15"
+}

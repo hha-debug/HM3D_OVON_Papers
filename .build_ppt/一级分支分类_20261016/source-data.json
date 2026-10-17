@@ -1,0 +1,112 @@
+{
+  "source": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\一级分支分类.md",
+  "groups": [
+    {
+      "name": "系统组织架构",
+      "papers": [
+        {
+          "name": "TANGO",
+          "training": "无需新增导航专项训练"
+        },
+        {
+          "name": "SuperNav",
+          "training": "主模型与几何执行器无需；可选学习式执行器的 GPU 配置未报告"
+        },
+        {
+          "name": "OmniNav",
+          "training": "阶段1 96×H20，120小时；阶段2 64×H20，48小时"
+        },
+        {
+          "name": "D3D-VLP",
+          "training": "4×RTX 6000 Ada，约14天"
+        },
+        {
+          "name": "Uni-NaVid",
+          "training": "40×H800，约35小时"
+        },
+        {
+          "name": "MTU3D",
+          "training": "4×A100；约164 GPU·小时"
+        }
+      ]
+    },
+    {
+      "name": "环境表征",
+      "papers": [
+        {
+          "name": "MSGNav",
+          "training": "无需新增导航专项训练"
+        },
+        {
+          "name": "SoftNav",
+          "training": "1×RTX 4090；时长未报告"
+        }
+      ]
+    },
+    {
+      "name": "历史记忆",
+      "papers": [
+        {
+          "name": "AstraNav-Memory",
+          "training": "32×H20；时长未报告"
+        },
+        {
+          "name": "JanusVLN",
+          "training": "64×H20，约31小时；阅读笔记转引作者答复"
+        }
+      ]
+    },
+    {
+      "name": "探索与目标搜索",
+      "papers": [
+        {
+          "name": "VLFM",
+          "training": "无需新增导航专项训练"
+        },
+        {
+          "name": "OpenFrontier",
+          "training": "无需新增导航专项训练"
+        }
+      ]
+    },
+    {
+      "name": "导航策略训练与优化",
+      "papers": [
+        {
+          "name": "OVSegDT",
+          "training": "2×A100；约2.15亿环境步，时长未报告"
+        },
+        {
+          "name": "CompassNav",
+          "training": "SFT 8×A800，约12小时；RFT 8×H200，约56.7小时（估算）"
+        }
+      ]
+    }
+  ],
+  "benchmarks": [
+    {
+      "name": "HM3D Semantics",
+      "training": "数据集本身不适用；导航基线另计"
+    },
+    {
+      "name": "HM3D-OVON",
+      "training": "按各基线分别统计"
+    },
+    {
+      "name": "GOAT-Bench",
+      "training": "按各基线分别统计"
+    },
+    {
+      "name": "SG3D / SG-LLM",
+      "training": "按 SG-LLM 等基线分别统计"
+    }
+  ],
+  "methods": {
+    "系统组织架构": "程序与工具／技能编排、快慢系统分层协作，以及多任务或规划、定位、探索与导航能力的统一建模。",
+    "环境表征": "用三维场景图组织物体、空间信息与视觉证据；将三维物体和前沿特征转换为视觉语言模型可使用的 soft tokens。",
+    "历史记忆": "压缩长期视觉历史，维护语义与空间双分支记忆，并通过历史缓存和滑动窗口更新跨帧信息。",
+    "探索与目标搜索": "构建语义价值地图或生成视觉前沿，利用目标相关性、信息增益和距离等评价探索位置，并进行目标确认。",
+    "导航策略训练与优化": "目标分割辅助监督、自适应 BC／PPO 联合优化，以及基于候选动作质量的 SFT／GRPO 与差距感知奖励设计。",
+    "数据集与评测基准": "场景语义标注、开放词汇与多模态目标构建、连续或顺序任务设计，以及评测协议和基线设计。"
+  }
+}

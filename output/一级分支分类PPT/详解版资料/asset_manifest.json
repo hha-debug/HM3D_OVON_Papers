@@ -1,0 +1,100 @@
+[
+  {
+    "id": "omninav_fig1",
+    "source_pdf": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\05_视觉语言动作决策与视频记忆\\2026_ICLR_OmniNav.pdf",
+    "pdf_page": 4,
+    "figure": 1,
+    "crop_pt": [
+      110,
+      77,
+      507,
+      285
+    ],
+    "image": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\output\\一级分支分类PPT\\详解版资料\\assets\\figures\\omninav_fig1.png",
+    "use": "Original scientific figure, caption separately in slide notes"
+  },
+  {
+    "id": "msgnav_fig3",
+    "source_pdf": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\04_三维空间表征与目标推理\\2026_CVPR_MSGNav.pdf",
+    "pdf_page": 4,
+    "figure": 3,
+    "crop_pt": [
+      102,
+      66,
+      518,
+      247
+    ],
+    "image": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\output\\一级分支分类PPT\\详解版资料\\assets\\figures\\msgnav_fig3.png",
+    "use": "Original scientific figure, caption separately in slide notes"
+  },
+  {
+    "id": "astranav_fig2",
+    "source_pdf": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\05_视觉语言动作决策与视频记忆\\2026_CVPR_AstraNav-Memory.pdf",
+    "pdf_page": 4,
+    "figure": 2,
+    "crop_pt": [
+      45,
+      68,
+      561,
+      288
+    ],
+    "image": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\output\\一级分支分类PPT\\详解版资料\\assets\\figures\\astranav_fig2.png",
+    "use": "Original scientific figure, caption separately in slide notes"
+  },
+  {
+    "id": "openfrontier_fig2",
+    "source_pdf": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\02_语义地图与前沿探索\\2026_RSS_OpenFrontier.pdf",
+    "pdf_page": 2,
+    "figure": 2,
+    "crop_pt": [
+      48,
+      51,
+      565,
+      216
+    ],
+    "image": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\output\\一级分支分类PPT\\详解版资料\\assets\\figures\\openfrontier_fig2.png",
+    "use": "Original scientific figure, caption separately in slide notes"
+  },
+  {
+    "id": "ovsegdt_fig2",
+    "source_pdf": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\01_模仿学习与强化学习导航\\2026_CVPR_OVSegDT.pdf",
+    "pdf_page": 4,
+    "figure": 2,
+    "crop_pt": [
+      314,
+      106,
+      574,
+      312
+    ],
+    "image": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\output\\一级分支分类PPT\\详解版资料\\assets\\figures\\ovsegdt_fig2.png",
+    "use": "Original scientific figure, caption separately in slide notes"
+  },
+  {
+    "id": "goatbench_fig1",
+    "source_pdf": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\00_数据集与任务基准\\2024_CVPR_GOAT_Bench.pdf",
+    "pdf_page": 1,
+    "figure": 1,
+    "crop_pt": [
+      46,
+      214,
+      565,
+      506
+    ],
+    "image": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\output\\一级分支分类PPT\\详解版资料\\assets\\figures\\goatbench_fig1.png",
+    "use": "Original scientific figure, caption separately in slide notes"
+  },
+  {
+    "id": "msgnav_fig4",
+    "source_pdf": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\04_三维空间表征与目标推理\\2026_CVPR_MSGNav.pdf",
+    "pdf_page": 6,
+    "figure": 4,
+    "crop_pt": [
+      48,
+      61,
+      305,
+      214
+    ],
+    "image": "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\output\\一级分支分类PPT\\详解版资料\\assets\\figures\\msgnav_fig4.png",
+    "use": "Original scientific figure, caption separately in slide notes"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "name": "package",
+    "exit_code": 0,
+    "stdout": "{\n  \"chart_count\": 0,\n  \"claim_boundary\": \"Structural package checks only; no slide text, notes, formulas, chart values, or native PowerPoint execution were inspected.\",\n  \"finding_count\": 0,\n  \"findings\": [],\n  \"notes_parts_skipped\": 27,\n  \"relationship_part_count\": 64,\n  \"slide_count\": 27,\n  \"status\": \"pass\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "name": "layout",
+    "exit_code": 0,
+    "stdout": "{\n  \"finding_count\": 0,\n  \"findings\": [],\n  \"font_policy\": {\n    \"checked_text_script_count\": 554,\n    \"native_font_rendering_verified\": false,\n    \"observed_font_families\": [\n      \"Microsoft YaHei\"\n    ],\n    \"observed_font_use_counts\": {\n      \"Microsoft YaHei\": 554\n    },\n    \"passed\": true,\n    \"performed\": true\n  },\n  \"slide_count\": 27,\n  \"slide_size_in\": [\n    13.3333,\n    7.5\n  ],\n  \"warning_count\": 0,\n  \"warnings\": []\n}\n",
+    "stderr": ""
+  },
+  {
+    "name": "table-arithmetic",
+    "exit_code": 0,
+    "stdout": "{\"checked_column_count\": 0, \"checks\": [], \"claim_boundary\": \"Displayed-value arithmetic with rounding tolerance; not source-data verification.\", \"eligible_table_count\": 0, \"finding_count\": 0, \"findings\": [], \"native_table_count\": 16, \"passed\": true, \"schema_version\": \"presentation-native-table-arithmetic.v1\", \"skipped_tables\": [{\"reason\": \"no_numeric_amounts\", \"slide\": 3, \"table\": 1}, {\"reason\": \"no_unambiguous_bottom_total\", \"slide\": 5, \"table\": 1}, {\"reason\": \"no_numeric_amounts\", \"slide\": 9, \"table\": 1}, {\"reason\": \"no_unambiguous_bottom_total\", \"slide\": 11, \"table\": 1}, {\"reason\": \"no_numeric_amounts\", \"slide\": 12, \"table\": 1}, {\"reason\": \"no_numeric_amounts\", \"slide\": 14, \"table\": 1}, {\"reason\": \"no_numeric_amounts\", \"slide\": 17, \"table\": 1}, {\"reason\": \"no_numeric_amounts\", \"slide\": 18, \"table\": 1}, {\"reason\": \"no_numeric_amounts\", \"slide\": 20, \"table\": 1}, {\"reason\": \"no_numeric_amounts\", \"slide\": 21, \"table\": 1}, {\"reason\": \"no_numeric_amounts\", \"slide\": 22, \"table\": 1}, {\"reason\": \"no_numeric_amounts\", \"slide\": 23, \"table\": 1}, {\"reason\": \"no_numeric_amounts\", \"slide\": 24, \"table\": 1}, {\"reason\": \"no_numeric_amounts\", \"slide\": 25, \"table\": 1}, {\"reason\": \"no_numeric_amounts\", \"slide\": 26, \"table\": 1}, {\"reason\": \"no_numeric_amounts\", \"slide\": 27, \"table\": 1}], \"slide_count\": 27, \"warning_count\": 0, \"warnings\": []}\n",
+    "stderr": ""
+  },
+  {
+    "name": "chart-titles",
+    "exit_code": 0,
+    "stdout": "{\"checks\":[],\"finding_count\":0,\"findings\":[],\"native_chart_count\":0,\"native_powerpoint_verified\":false,\"passed\":true,\"presentation_sha256\":\"99ca8b9ac223cf715bcba8da7bf879dbf13c84ca4c04838792ecb24b6db11759\",\"schema_version\":\"presentation-native-chart-titles.v1\",\"slide_count\":27,\"source_text_emitted\":false,\"unresolved_linked_title_count\":0}\n",
+    "stderr": ""
+  },
+  {
+    "name": "quantitative-charts",
+    "exit_code": 0,
+    "stdout": "{\"chart_count\":0,\"chart_counts\":{},\"chart_owner_slide_parts\":{},\"chart_owner_slides\":[],\"package_sha256\":\"99ca8b9ac223cf715bcba8da7bf879dbf13c84ca4c04838792ecb24b6db11759\",\"schema_version\":\"owner-private.actual-native-chart-discovery.v1\",\"slide_count\":27,\"source_attachments_accessed\":false,\"source_required_chart_owners_inferred\":false}\n",
+    "stderr": ""
+  }
+]

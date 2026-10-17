@@ -1,0 +1,32 @@
+{
+  "changed_parts": [
+    "ppt/notesSlides/notesSlide14.xml",
+    "ppt/notesSlides/notesSlide16.xml",
+    "ppt/notesSlides/notesSlide17.xml",
+    "ppt/notesSlides/notesSlide22.xml",
+    "ppt/notesSlides/notesSlide24.xml",
+    "ppt/notesSlides/notesSlide28.xml",
+    "ppt/notesSlides/notesSlide32.xml",
+    "ppt/notesSlides/notesSlide7.xml",
+    "ppt/slides/slide14.xml",
+    "ppt/slides/slide16.xml",
+    "ppt/slides/slide17.xml",
+    "ppt/slides/slide22.xml",
+    "ppt/slides/slide24.xml",
+    "ppt/slides/slide28.xml",
+    "ppt/slides/slide32.xml",
+    "ppt/slides/slide7.xml"
+  ],
+  "changed_slides": [
+    7,
+    14,
+    16,
+    17,
+    22,
+    24,
+    28,
+    32
+  ],
+  "other_parts_identical": true,
+  "original_image_bytes_preserved": true
+}

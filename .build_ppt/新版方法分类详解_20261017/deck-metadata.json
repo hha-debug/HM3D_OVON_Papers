@@ -1,0 +1,356 @@
+[
+  {
+    "id": "kd3h00",
+    "title": "开放词汇导航的方法分类",
+    "kind": "cover",
+    "sources": [
+      "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\一级分支分类.md"
+    ],
+    "slide": 1
+  },
+  {
+    "id": "z7ghni",
+    "title": "方法分类总览",
+    "kind": "taxonomy",
+    "sources": [
+      "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\一级分支分类.md"
+    ],
+    "slide": 2
+  },
+  {
+    "id": "y01kdn",
+    "title": "系统组织架构：方法与评测概览",
+    "kind": "direction-intro",
+    "sources": [
+      "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\一级分支分类.md"
+    ],
+    "slide": 3
+  },
+  {
+    "id": "gpqwfz",
+    "title": "分层与模块化协作",
+    "kind": "method",
+    "sources": [
+      "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\03_大模型规划与工具调用\\read-Tango.md",
+      "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\03_大模型规划与工具调用\\read-SuperNav.md",
+      "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\05_视觉语言动作决策与视频记忆\\read-OmniNav.md"
+    ],
+    "slide": 4
+  },
+  {
+    "id": "x8f69ofe",
+    "sourceSlide": 6,
+    "kind": "representative",
+    "slide": 5
+  },
+  {
+    "id": "14rbsz",
+    "title": "多能力统一联合建模",
+    "kind": "method",
+    "sources": [
+      "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\04_三维空间表征与目标推理\\read-D3D.md",
+      "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\05_视觉语言动作决策与视频记忆\\read-UniNavid.md",
+      "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\04_三维空间表征与目标推理\\read-MTU.md"
+    ],
+    "slide": 6
+  },
+  {
+    "id": "1mzfqp",
+    "title": "D3D-VLP：计划、目标定位与航点联合决策",
+    "kind": "method",
+    "sources": [
+      "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\04_三维空间表征与目标推理\\read-D3D.md",
+      "D3D-VLP §3.1–3.3，Figs.2–3"
+    ],
+    "slide": 7
+  },
+  {
+    "id": "cb14b7",
+    "title": "同类架构的接口差异",
+    "kind": "method",
+    "sources": [
+      "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\一级分支分类.md",
+      "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\方法分类索引.md"
+    ],
+    "slide": 8
+  },
+  {
+    "id": "ofy9wn61",
+    "sourceSlide": 3,
+    "kind": "benchmark-results",
+    "slide": 9
+  },
+  {
+    "id": "jyx0ra1s",
+    "sourceSlide": 4,
+    "kind": "benchmark-results",
+    "slide": 10
+  },
+  {
+    "id": "i107q5of",
+    "sourceSlide": 5,
+    "kind": "benchmark-results",
+    "slide": 11
+  },
+  {
+    "id": "uzjsbt",
+    "title": "环境表征：方法与评测概览",
+    "kind": "direction-intro",
+    "sources": [
+      "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\一级分支分类.md"
+    ],
+    "slide": 12
+  },
+  {
+    "id": "c3q1vn",
+    "title": "显式地图与场景结构",
+    "kind": "method",
+    "sources": [
+      "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\04_三维空间表征与目标推理\\read-MSGNav.md",
+      "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\方法分类索引.md"
+    ],
+    "slide": 13
+  },
+  {
+    "id": "m90b6t0r",
+    "sourceSlide": 10,
+    "kind": "representative",
+    "slide": 14
+  },
+  {
+    "id": "n3n7xp",
+    "title": "学习式连续空间特征",
+    "kind": "method",
+    "sources": [
+      "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\04_三维空间表征与目标推理\\read-SoftNav.md",
+      "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\04_三维空间表征与目标推理\\read-MTU.md",
+      "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\04_三维空间表征与目标推理\\read-D3D.md"
+    ],
+    "slide": 15
+  },
+  {
+    "id": "xo3rqo",
+    "title": "SoftNav：三维特征的soft-token接口",
+    "kind": "method",
+    "sources": [
+      "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\04_三维空间表征与目标推理\\read-SoftNav.md",
+      "SoftNav §III，Fig.2上半部分，Table V"
+    ],
+    "slide": 16
+  },
+  {
+    "id": "bg0uma",
+    "title": "SoftNav：空间、视觉历史与语言联合决策",
+    "kind": "method",
+    "sources": [
+      "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\04_三维空间表征与目标推理\\read-SoftNav.md",
+      "SoftNav §III，Fig.2下半部分，Algorithm 1"
+    ],
+    "slide": 17
+  },
+  {
+    "id": "fu1gfa1s",
+    "sourceSlide": 8,
+    "kind": "benchmark-results",
+    "slide": 18
+  },
+  {
+    "id": "udsvah03",
+    "sourceSlide": 9,
+    "kind": "benchmark-results",
+    "slide": 19
+  },
+  {
+    "id": "r7uvbp",
+    "title": "历史记忆：方法与评测概览",
+    "kind": "direction-intro",
+    "sources": [
+      "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\一级分支分类.md"
+    ],
+    "slide": 20
+  },
+  {
+    "id": "uo2lz7",
+    "title": "观察历史的压缩与重放",
+    "kind": "method",
+    "sources": [
+      "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\05_视觉语言动作决策与视频记忆\\read-AstraNav.md",
+      "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\05_视觉语言动作决策与视频记忆\\read-UniNavid.md",
+      "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\04_三维空间表征与目标推理\\read-SoftNav.md"
+    ],
+    "slide": 21
+  },
+  {
+    "id": "6lsnupw7",
+    "sourceSlide": 14,
+    "kind": "representative",
+    "slide": 22
+  },
+  {
+    "id": "41xeun",
+    "title": "递归状态与缓存更新",
+    "kind": "method",
+    "sources": [
+      "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\05_视觉语言动作决策与视频记忆\\read-JANUSVLN.md",
+      "JanusVLN §3.2，Fig.2，Appendix B"
+    ],
+    "slide": 23
+  },
+  {
+    "id": "5o249v",
+    "title": "JanusVLN：语义历史与流式几何缓存",
+    "kind": "method",
+    "sources": [
+      "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\05_视觉语言动作决策与视频记忆\\read-JANUSVLN.md",
+      "JanusVLN §3.2–3.3，Fig.2；笔记核对公开评测实现"
+    ],
+    "slide": 24
+  },
+  {
+    "id": "hgzapcr6",
+    "sourceSlide": 13,
+    "kind": "benchmark-results",
+    "slide": 25
+  },
+  {
+    "id": "6g8wz5",
+    "title": "探索与目标搜索：方法与评测概览",
+    "kind": "direction-intro",
+    "sources": [
+      "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\一级分支分类.md"
+    ],
+    "slide": 26
+  },
+  {
+    "id": "zt33jk",
+    "title": "语义引导的前沿搜索",
+    "kind": "method",
+    "sources": [
+      "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\方法分类索引.md",
+      "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\02_语义地图与前沿探索\\read.md",
+      "VLFM §IV；OpenFrontier §III，Algorithm 1"
+    ],
+    "slide": 27
+  },
+  {
+    "id": "14bup87q",
+    "sourceSlide": 17,
+    "kind": "representative",
+    "slide": 28
+  },
+  {
+    "id": "zec4ca",
+    "title": "前沿搜索的两种实现",
+    "kind": "method",
+    "sources": [
+      "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\方法分类索引.md",
+      "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\02_语义地图与前沿探索\\read.md"
+    ],
+    "slide": 29
+  },
+  {
+    "id": "xj52zb",
+    "title": "导航策略训练与优化：方法与评测概览",
+    "kind": "direction-intro",
+    "sources": [
+      "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\一级分支分类.md"
+    ],
+    "slide": 30
+  },
+  {
+    "id": "z1shvk",
+    "title": "模仿学习与强化学习结合",
+    "kind": "method",
+    "sources": [
+      "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\01_模仿学习与强化学习导航\\read.md",
+      "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\05_视觉语言动作决策与视频记忆\\read-CompassNav.md"
+    ],
+    "slide": 31
+  },
+  {
+    "id": "m1wvqtk3",
+    "sourceSlide": 21,
+    "kind": "representative",
+    "slide": 32
+  },
+  {
+    "id": "nmvizc",
+    "title": "CompassNav：SFT之后用GRPO比较动作质量",
+    "kind": "method",
+    "sources": [
+      "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\05_视觉语言动作决策与视频记忆\\read-CompassNav.md",
+      "CompassNav §3–4，Figs.3–4，式(1)–(6)，Appendix C"
+    ],
+    "slide": 33
+  },
+  {
+    "id": "zyxsni5k",
+    "sourceSlide": 20,
+    "kind": "benchmark-results",
+    "slide": 34
+  },
+  {
+    "id": "dqbec6",
+    "title": "方法类别怎样组合成一个导航系统",
+    "kind": "synthesis",
+    "sources": [
+      "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\一级分支分类.md",
+      "E:\\科研_机器人\\HM3D-OVON\\HM3D_OVON_Papers\\方法分类索引.md"
+    ],
+    "slide": 35
+  },
+  {
+    "id": "c7uhcr6t",
+    "sourceSlide": 23,
+    "kind": "benchmark-context",
+    "slide": 36
+  },
+  {
+    "id": "7qto7e10",
+    "sourceSlide": 24,
+    "kind": "benchmark-context",
+    "slide": 37
+  },
+  {
+    "id": "l0bepsfm",
+    "sourceSlide": 26,
+    "kind": "compute",
+    "slide": 38
+  },
+  {
+    "id": "4vyxknqp",
+    "sourceSlide": 27,
+    "kind": "compute",
+    "slide": 39
+  },
+  {
+    "id": "3mdove10",
+    "sourceSlide": 28,
+    "kind": "compute",
+    "slide": 40
+  },
+  {
+    "id": "i5o3q10v",
+    "sourceSlide": 29,
+    "kind": "compute",
+    "slide": 41
+  },
+  {
+    "id": "wnqh07ex",
+    "sourceSlide": 30,
+    "kind": "compute",
+    "slide": 42
+  },
+  {
+    "id": "lcn6tkb6",
+    "sourceSlide": 31,
+    "kind": "compute",
+    "slide": 43
+  },
+  {
+    "id": "6l0j294r",
+    "sourceSlide": 32,
+    "kind": "compute",
+    "slide": 44
+  }
+]
